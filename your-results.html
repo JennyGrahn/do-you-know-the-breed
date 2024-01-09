@@ -18,22 +18,21 @@
         <a href="sign-in.html">sign in</a>
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
-    <h2>Sign in</h2>
-    <p>or create an account <strong><a href="create-account.html">here</a></strong></p>
-    <!--When hovered over here there will be an underline appearing-->
-    <!--The form is for the user to sign in so they will be able to se their latest score, and maybe track it. I have not yet decided.-->
-    <form>
-        <p>
-            <input type="email" name="email" placeholder="Your Email">
-        </p>
-        <p>
-            <input type="password" name="password" placeholder="Your Password">
-        </p>
-        <p>
-            <input type="submit" name="submit" value="Sign in">
-        </p>
+    <section>
+        <h1>Youe score will be shown here</h1>
+        <p>some comment on how it went and encouragement for you to try again</p>
+    </section>
+    <p>
+
+    </p>
+    <!--Copied from https://www.w3schools.com/tags/tag_output.asp to serve as a que and will be removed later on-->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
     </form>
-    <footer>Do you knwo the breed? 2024</footer>
+    <!--A button that will be taking you to your aswers where you will be able to review it.-->
+    <button>Review your answers🔍</button>
 </body>
 
 </html>
