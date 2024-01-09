@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.header-text {
+    margin-right: 10px;
+    /* Adjust as needed */
+    font-family: 'Coiny', system-ui;
+    max-width: 15%;
+}
+
+.logo {
+    /* Adjust as needed */
+    max-width: 20%;
+    max-height: auto;
+}
+
+
+h1 {
+    font-family: 'Epilogue', sans-serif;
+}
+
+h2 {
+    font-family: 'Epilogue', sans-serif;
+}
+
+p {
+    font-family: 'Epilogue', sans-serif;
+}
