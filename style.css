@@ -1,22 +1,40 @@
-.header {
+/*CSS styling for the header, navigation bar and logo*/
+
+header {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     /* Center items vertically */
 }
 
-.header-text {
-    margin-right: 10px;
-    /* Adjust as needed */
+.line {
+    border-bottom: 2px solid black;
+}
+
+#header-text {
     font-family: 'Coiny', system-ui;
-    max-width: 15%;
+    max-width: 10%;
+    display: inline-flex;
+    text-decoration: none;
 }
 
 .logo {
     /* Adjust as needed */
-    max-width: 20%;
+    max-width: 9%;
     max-height: auto;
+    margin-right: auto;
 }
 
+.menu-button {
+    display: inline-block;
+    padding: 0px 1%;
+    padding-top: 5%;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+/*Text and font styling*/
 
 h1 {
     font-family: 'Epilogue', sans-serif;
@@ -26,6 +44,30 @@ h2 {
     font-family: 'Epilogue', sans-serif;
 }
 
-p {
+p,
+a {
     font-family: 'Epilogue', sans-serif;
+}
+
+/*Section styling for the home-page"*/
+
+.sec1 {
+    float: right;
+    padding-right: 50%;
+    margin: auto;
+
+}
+
+#img-home {
+    max-width: 60%;
+}
+
+.sec2 {
+    float: left;
+    padding-left: 50%;
+    margin: auto;
+}
+
+footer {
+    clear: both;
 }
