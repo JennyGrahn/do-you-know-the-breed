@@ -7,9 +7,7 @@ header {
     /* Center items vertically */
 }
 
-.line {
-    border-bottom: 2px solid black;
-}
+
 
 #header-text {
     font-family: 'Coiny', system-ui;
@@ -25,13 +23,23 @@ header {
     margin-right: auto;
 }
 
-.menu-button {
+nav {
     display: inline-block;
     padding: 0px 1%;
     padding-top: 5%;
     text-decoration: none;
     color: black;
     font-size: 22px;
+}
+
+.menu {
+    text-decoration: none;
+    padding-right: 0, 5%;
+    color: black;
+}
+
+.line {
+    border-bottom: 2px solid black;
 }
 
 /*Text and font styling*/
@@ -59,6 +67,9 @@ a {
 }
 
 #img-home {
+    position: relative;
+    left: 10%;
+    bottom: 150px;
     max-width: 60%;
 }
 
@@ -66,6 +77,40 @@ a {
     float: left;
     padding-left: 50%;
     margin: auto;
+}
+
+
+#h2-home {
+    position: relative;
+    left: 20%;
+    top: 330px;
+    max-width: 60%;
+    text-align: center;
+}
+
+#p-home {
+
+    position: relative;
+    left: 20%;
+    top: 300px;
+    bottom: 75px;
+    max-width: 60%;
+    text-align: center;
+    font-size: medium;
+}
+
+.to-quiz {
+    position: relative;
+    left: 42%;
+    top: 325px;
+    bottom: 75px;
+    max-width: 15%;
+    height: 125px;
+    text-align: center;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
 }
 
 footer {
