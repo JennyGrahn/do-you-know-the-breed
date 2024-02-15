@@ -23,9 +23,8 @@
             aria-label="An icon with a dog and the name of the webpage Do you know the breed around it.">
         <nav>
             <a class="menu" href="index.html">home</a>
-            <a class="menu" href="introduction-quiz.html">quiz</a>
-            <a class="menu" href="dog-breeds.html">dog breeds</a>
-            <a href="sign-in.html">sign in</a>
+            <a class="menu" href="instructions.html">quiz</a>
+            <a class="contact" href="contact.html">contact📩</a>
         </nav>
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
@@ -37,10 +36,17 @@
             the
             difference
             between the two, and so many other breeds. How many can you tell the difference between?</p>
-        <button class="to-quiz">TAKE ME TO THE QUIZ💪</button>
+        <!-- Part of the code is from ChatGPT when I asked a question on how to redirect a button a specific file -->
+        <button onclick="redirect()" class="to-quiz">TAKE ME TO THE QUIZ💪</button>
+        <script>
+            function redirect() {
+                window.location.href = 'instructions.html'
+            }
+        </script>
     </section>
     <section class="sec2">
-        <img id="img-home" src="dogpictures/shetlandsheepdog.img.jpg">
+        <img id="img-home" src="dogpictures/shetlandsheepdog.img.jpg"
+            alt="Image of a Shetland Sheepdog, a smaller dog which looks like a small Collie.">
         <!--Here goes the picture of a shetland sheepdog-->
     </section>
     <footer>Do you know the breeds? 2024</footer>

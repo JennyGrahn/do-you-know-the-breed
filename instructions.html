@@ -29,15 +29,21 @@
         </nav>
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
-    <h1>Are you ready for the quiz?</h1>
-    <h2>Here is the rules:</h2>
-    <p>You will be shown a picture of an dog breed. Then you will get three different alternatives to choose from,
-        with one who is right answer. By clicking on the one you believe is the right breed you will automaticaly be
-        moved to the next breed.</p>
-    <br>
-    <p>When you have answered all the questions you will get you results. You will have the opportunity to go over all
-        your answers to have the possibility to review them by clicking on them.</p>
-    <button>LETS GET STARTED!</button>
+    <h1 class="h1-center">You will soon begin!</h1>
+    <p class="p-center">You are about to test your knowledge about 20 common and uncommon breeds. Before you start here
+        is the
+        guidelines:
+        <br>
+        You will recieve one picture of dog. From there you will chose one of three alternatives. The correct answer
+        will be marked green show ones you click on one of the alternative. Ones you have clicked on a answer you cant
+        undo it.</p>
+    <button onclick="redirect()" class="to-quiz">LET'S BEGIN🔥</button>
+    <!-- Part of the code is from ChatGPT when I asked a question on how to redirect a button a specific file -->
+    <script>
+        function redirect() {
+            window.location.href = 'quiz.html'
+        }
+    </script>
     <footer>Do you know the breeds? 2024</footer>
 </body>
 

@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Libre+Baskerville&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
     <title>Do you know the breed?</title>
 </head>
 
@@ -22,29 +22,33 @@
         <img class="logo" src="Logo/do-you-know-the--breed-high-resolution-logo-black.jpeg"
             aria-label="An icon with a dog and the name of the webpage Do you know the breed around it.">
         <nav>
-            <a href="index.html">home</a>
-            <a href="introduction-quiz.html">quiz</a>
-            <a href="dog-breeds.html">dog breeds</a>
-            <a href="sign-in.html">sign in</a>
+            <a class="menu" href="index.html">home</a>
+            <a class="menu" href="introduction-quiz.html">quiz</a>
+            <a class="contact" href="contact.html">contact📩</a>
         </nav>
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
     <!--Image of dog breed goes here, and is giong to serve as que for the quiz taker.-->
-    <img src="">
-    <!--The error depends on that I have not added the image-->
-    <!--The alternatives will go here. The text is there only temporary while I am figuring out how to incorporate javascript into it.-->
     <section>
-        <button>Alternative 1</button>
-        <br>
-        <button>Alternative 2</button>
-        <br>
-        <button>Alternative 3</button>
-    </section>
-    <section>
-        <!--Forward and back button, find a way to use emojis or just use letters instead-->
-        <button>🔙</button>
-        <br>
-        <button>Next</button>
+        <div class="sec1">
+            <img id="breed-img" src="dogpictures/shetlandsheepdog.img.jpg"
+                alt="Image of a Shetland Sheepdog, a smaller dog which looks like a small Collie.">
+        </div>
+        <!--The error depends on that I have not added the image-->
+        <!--The alternatives will go here. The text is there only temporary while I am figuring out how to incorporate javascript into it.-->
+        <div>
+            <p id="breed">Collie</p>
+            <br>
+            <p id="breed">Corgi Pembrooke</p>
+            <br>
+            <p id="breed">Shetland Sheepdog</p>
+        </div>
+        <div class="">
+            <!--Forward and back button, find a way to use emojis or just use letters instead-->
+            <button>🔙</button>
+            <br>
+            <button>Next</button>
+        </div>
     </section>
     <footer>Do you know the breed? 2024</footer>
 </body>
