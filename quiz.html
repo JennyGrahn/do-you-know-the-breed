@@ -29,27 +29,18 @@
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
     <!--Image of dog breed goes here, and is giong to serve as que for the quiz taker.-->
-    <section>
-        <div class="sec1">
-            <img id="breed-img" src="dogpictures/shetlandsheepdog.img.jpg"
-                alt="Image of a Shetland Sheepdog, a smaller dog which looks like a small Collie.">
+    <div class="container">
+        <div class="question-con">
+            <button class="breed">Breed 1</button>
+            <button class="breed">Breed 2</button>
+            <button class="breed">Breed 3</button>
         </div>
-        <!--The error depends on that I have not added the image-->
-        <!--The alternatives will go here. The text is there only temporary while I am figuring out how to incorporate javascript into it.-->
-        <div>
-            <p id="breed">Collie</p>
-            <br>
-            <p id="breed">Corgi Pembrooke</p>
-            <br>
-            <p id="breed">Shetland Sheepdog</p>
-        </div>
-        <div class="">
-            <!--Forward and back button, find a way to use emojis or just use letters instead-->
-            <button>🔙</button>
-            <br>
-            <button>Next</button>
-        </div>
-    </section>
+    </div>
+    <div class="dir-btn btn">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <!--Make sure to change the code as its copied from https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/index.html-->
+    </div>
     <footer>Do you know the breed? 2024</footer>
 </body>
 

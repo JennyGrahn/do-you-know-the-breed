@@ -76,8 +76,9 @@ a {
     font-family: 'Epilogue', sans-serif;
 }
 
-/*Introtext and picture goes here*/
+/*Introtext and picture goes here, original code goes here*/
 
+/*
 .container {
     display: inline-flex;
     align-items: center;
@@ -111,3 +112,180 @@ a {
     color: white;
     border-radius: 30px;
 }
+*/
+
+/*Ifall jag skulle mixtra upp koden igen och behöva återtsälla till originalet
+/*
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.con1,
+.con2 {
+    width: 45%;
+    
+    padding: 5%;
+    text-align: center;
+}
+
+.con1 {
+    padding-left: 12.5%;
+}
+
+.con2 {
+    padding-right: 5%;
+}
+
+#img-home {
+    display: block;
+    max-width: 70%;
+   
+    height: auto;
+   
+
+.to-quiz {
+    max-width: 20%;
+    height: 125px;
+    text-align: center;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrera innehållet horisontellt */
+    height: 100vh;
+    /* Använd 100% av viewport-höjden */
+}
+
+.con1,
+.con2 {
+    width: 45%;
+    /* Minska bredden för att ge lite mellanrum mellan con1 och con2 */
+    padding: 5%;
+    text-align: center;
+}
+
+.con1 {
+    padding-left: 12.5%;
+}
+
+.con2 {
+    padding-right: 5%;
+}
+
+#img-home {
+    display: block;
+    max-width: 70%;
+    /* Se till att bilden anpassar sig till förälderns bredd */
+    height: auto;
+    /* Behåll bildens proportioner */
+}
+
+.to-quiz {
+    max-width: 20%;
+    height: 125px;
+    text-align: center;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+*/ .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrera innehållet horisontellt */
+    height: 100vh;
+    /* Använd 100% av viewport-höjden */
+}
+
+.con1,
+.con2 {
+    width: 45%;
+    /* Minska bredden för att ge lite mellanrum mellan con1 och con2 */
+    padding: 5%;
+    text-align: center;
+}
+
+.con1 {
+    padding-left: 12.5%;
+}
+
+.con2 {
+    padding-right: 5%;
+}
+
+#img-home {
+    display: block;
+    max-width: 70%;
+    /* Se till att bilden anpassar sig till förälderns bredd */
+    height: auto;
+    /* Behåll bildens proportioner */
+}
+
+.to-quiz {
+    max-width: 20%;
+    height: 125px;
+    text-align: center;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+/*Ifall jag skulle mixtra upp koden igen och behöva återtsälla till originalet
+/*
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.con1,
+.con2 {
+    width: 45%;
+    
+    padding: 5%;
+    text-align: center;
+}
+
+.con1 {
+    padding-left: 12.5%;
+}
+
+.con2 {
+    padding-right: 5%;
+}
+
+#img-home {
+    display: block;
+    max-width: 70%;
+   
+    height: auto;
+   
+
+.to-quiz {
+    max-width: 20%;
+    height: 125px;
+    text-align: center;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+*/
