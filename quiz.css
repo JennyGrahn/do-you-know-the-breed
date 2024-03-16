@@ -78,30 +78,8 @@ a {
 
 /*Quiz styling*/
 
-#breed {
-    position: relative;
-    margin-left: 60rem;
-    padding-bottom: 40rem;
-    /*position: relative;*/
-    /*margin-left: 55rem;
-    margin-top: 25rem;
-    */
-}
-
-/*
-
-#breed {
-    position: relative;
-    display: inline-block;
-    /*position: relative;
-    margin-left: 55rem;
-    margin-bottom: 25rem;
-    
-}
- */
-
 #breed-img {
-
-    width: 30%;
-
+    max-width: 80%;
+    display: block;
+    margin: auto;
 }
