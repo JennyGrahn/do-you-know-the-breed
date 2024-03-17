@@ -29,19 +29,22 @@
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
     <!--Image of dog breed goes here, and is giong to serve as que for the quiz taker.-->
-    <div id="quiz">
+    <div class="quiz">
         <h2>Do you know the breed?</h2>
         <img src="breed-images/labrador-8554882_1280.jpg" alt="image of a black dog" id="breed-img">
-        <button>Labrador retriever</button>
-        <button>Poodle</button>
-        <button>German Shepheard</button>
+        <div class="ans-container">
+            <button class="answer">Labrador retriever</button>
+            <button class="answer">Poodle</button>
+            <button class="answer">German Shepheard</button>
 
-    </div>
-    <button id="next">Next</button>
-    <div id="results">
-    </div>
-    <script src="quiz.js"></script>
-    <footer>Do you know the breed? 2024</footer>
+        </div>
+
+        <button class="next-btn">Next</button>
+
+        <div id="results">
+        </div>
+        <script src="quiz.js"></script>
+        <footer>Do you know the breed? 2024</footer>
 
 </body>
 

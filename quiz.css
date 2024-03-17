@@ -69,6 +69,7 @@ h1 {
 
 h2 {
     font-family: 'Epilogue', sans-serif;
+    text-align: center;
 }
 
 p,
@@ -82,4 +83,25 @@ a {
     max-width: 80%;
     display: block;
     margin: auto;
+}
+
+.ans-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer {
+    margin: 50px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 30px;
+    border-color: black;
+    font-size: larger;
+}
+
+.next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
