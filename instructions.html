@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Libre+Baskerville&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Do you know the breed+</title>
+    <link rel="stylesheet" href="instructions.css">
+    <title>Do you know the breed?</title>
 </head>
 
 <body>
@@ -24,26 +24,35 @@
         <nav>
             <a href="index.html">home</a>
             <a href="introduction-quiz.html">quiz</a>
-            <a href="dog-breeds.html">dog breeds</a>
-            <a href="sign-in.html">sign in</a>
+            <a href="contact.html">contact💌</a>
         </nav>
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
-    <h1 class="h1-center">You will soon beign, but read this first:</h1>
-    <p class="p-center">Welcome to the dog breeds quiz! Here is how it works:
-        You will be presented with pictures of various dog breeds. For each picture, you must choose one of three
-        alternatives. Once you select an answer, it will be marked as either correct or incorrect. The correct answer
-        will be highlighted in green. Please note that once you click on an answer, it cannot be undone.
-    </p>
+    <div class="container">
+        <!--This is the instruction to the quiz-->
+        <h1 class="h1-center">You will soon beign, but read this first:</h1>
+
+        <p class="p-center">Welcome to the dog breeds quiz! Here is how it works:
+            You will be presented with pictures of various dog breeds. For each picture, you must choose one of three
+            alternatives. Once you select an answer, it will be marked as either correct or incorrect. The correct
+            answer
+            will be highlighted in green. Please note that once you click on an answer, it cannot be undone.
+        </p>
+        <p class="p-center">Now go and find out how much you really know!</p>
+        <!--Button redirecting the user to the quiz-->
+        <button onclick="redirect()" class="to-quiz-btn">LET'S BEGIN🔥</button>
+        <!--Should the script tag be placed here? Speak with Eman-->
+        <script>
+            function redirect() {
+                window.location.href = 'quiz.html'
+            }
+        </script>
+    </div>
     <br>
-    <p class="p-center">Now go and find out how much you really know!</p>
-    <button onclick="redirect()" class="to-quiz">LET'S BEGIN🔥</button>
-    <!-- Part of the code is from ChatGPT when I asked a question on how to redirect a button a specific file -->
-    <script>
-        function redirect() {
-            window.location.href = 'quiz.html'
-        }
-    </script>
+
+
+
+
     <footer>Do you know the breeds? 2024</footer>
 </body>
 

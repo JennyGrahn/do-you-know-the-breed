@@ -1,0 +1,92 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* Center items vertically */
+}
+
+/*navigation bar*/
+
+#header-text {
+    font-family: 'Coiny', system-ui;
+    max-width: 10%;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.logo {
+    /* Adjust as needed */
+    max-width: 9%;
+    max-height: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: inline-block;
+    padding: 0px 1%;
+    padding-top: 5%;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.menu {
+    text-decoration: none;
+    padding-right: 1rem;
+    color: black;
+}
+
+.contact {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.line {
+    border-bottom: 2px solid black;
+}
+
+/*Text and font styling*/
+
+h1 {
+    font-family: 'Epilogue', sans-serif;
+}
+
+h2 {
+    font-family: 'Epilogue', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Epilogue', sans-serif;
+}
+
+/*Centering the text and button*/
+
+.container {
+    width: 900px;
+    margin: 250px auto;
+    text-align: center;
+
+}
+
+.h1-center,
+.p-center {
+    text-align: center;
+}
+
+/*CSS for the button*/
+
+.to-quiz-btn {
+    max-width: 25%;
+    height: 125px;
+    padding: 15px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+
+
+}
