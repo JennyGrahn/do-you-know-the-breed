@@ -79,7 +79,7 @@ a {
 
 /*CSS for the button*/
 
-.to-quiz-btn {
+#to-quiz-btn {
     max-width: 25%;
     height: 125px;
     padding: 15px;

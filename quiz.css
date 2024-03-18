@@ -1,5 +1,6 @@
 /*CSS styling for the header, navigation bar and logo*/
 
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -91,13 +92,32 @@ a {
     align-items: center;
 }
 
-.answer {
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 0;
+    /*Add the gap you want*/
+    margin: 0 20px;
+    /*Adjust as you go along*/
+}
+
+.answer-btn {
     margin: 50px;
     padding: 25px;
     background-color: white;
     border-radius: 30px;
     border-color: black;
+    border-width: 2px;
     font-size: larger;
+    box-shadow: 0 0 10px 2px;
+}
+
+.answer-btn.correct {
+    background-color: #4CAF50;
+}
+
+.answer-btn.wrong {
+    background-color: red;
 }
 
 .next-btn {

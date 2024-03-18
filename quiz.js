@@ -1,6 +1,32 @@
+const startButton = document.getElementByid('to-quiz-btn');
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const nextButton = document.getElementById('next-btn');
+
+//Added from the same video https://www.youtube.com/watch?v=riDzcEQbX6k*/
+const shuffledQuestions, currentQuestionIndex
+//Added from the same video https://www.youtube.com/watch?v=riDzcEQbX6k*/
+startButton.addEventListener('click', startGame)
+
+/*Code-snippet from https://www.youtube.com/watch?v=riDzcEQbX6k*/
+function startGame() {
+    console.log(Started)
+    window.location.href = 'quiz.html'; //Not sure if its supposed to be here 
+    startButton.classList.add('hide')
+    shuffledQuestions = questions.sort(() => Math.random() - .5) //Gives this a random array?
+    currentQuestionIndex = 0;
+    quizContainer.classList.remove('hide')
+    setNextbreedQuetions()
+}
+
+//In the video he, created a function setNeztQuestion. As I already have an array with questions and answers. Am I supposeed to put that function before or after?
+function setNextQuestion() {
+    showbreedQuestions(shuffledQuestions[currentQuestionIndex])
+}
+
+function showbreedQuestion {
+
+}
 
 const breedQuestions = [{
         //Correct answer is Labrador retriever 
@@ -238,12 +264,30 @@ function buildQuiz() {
         );
     });
 
+
+
+    //When the user clicks on an answer if its correct it will be green and red if wrong
     quizContainer.innerHTML = output.join('');
+
+    const answerButtons = document.querySelectorAll('.answer-btn');
+    answerButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            const currentQuestion = breedQuestions[index];
+            const userAnswer = button.getAttribute('value');
+            if (userAnswer === currentQuestion.correctAnswer) {
+                button.classList.add('correct');
+            } else {
+                button.classList.add('wrong');
+            }
+        });
+    });
+
 }
 
 buildQuiz();
 
 nextButton.addEventListener('click', showResults);
+
 
 function showResults() {
     const answerContainers = quizContainer.querySelectorAll('.answers');
