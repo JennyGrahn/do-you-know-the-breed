@@ -4,7 +4,6 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* Center items vertically */
 }
 
 /*navigation bar*/
@@ -17,7 +16,6 @@ header {
 }
 
 .logo {
-    /* Adjust as needed */
     max-width: 9%;
     max-height: auto;
     margin-right: auto;
@@ -44,17 +42,6 @@ nav {
     border-radius: 30px;
     padding: 1rem;
     text-decoration: none;
-    /*position: relative;
-    left: 42%;
-    top: 325px;
-    bottom: 75px;
-    max-width: 15%;
-    height: 125px;
-    text-align: center;
-    font-size: x-large;
-    background-color: black;
-    color: white;
-    border-radius: 30px;*/
 }
 
 .line {
@@ -76,59 +63,16 @@ a {
     font-family: 'Epilogue', sans-serif;
 }
 
-/*Introtext and picture goes here, original code goes here*/
-
-/*
-.container {
-    display: inline-flex;
-    align-items: center;
-
-}
-
-.con1 {
-    width: 50%;
-    padding-left: 5%;
-    padding-top: 5%;
-    text-align: center;
-}
-
-.con2 {
-    width: 50%;
-    padding-top: 5%;
-    padding-right: 10%;
-}
-
-#img-home {
-    display: block;
-    width: 500px;
-}
-
-.to-quiz {
-    max-width: 20%;
-    height: 125px;
-    text-align: center;
-    font-size: x-large;
-    background-color: black;
-    color: white;
-    border-radius: 30px;
-}
-*/
-
-/*Ifall jag skulle mixtra upp koden igen och behöva återtsälla till originalet
-/*
-
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
 }
 
 .con1,
 .con2 {
     width: 45%;
-    
     padding: 5%;
     text-align: center;
 }
@@ -144,52 +88,7 @@ a {
 #img-home {
     display: block;
     max-width: 70%;
-   
     height: auto;
-   
-
-.to-quiz {
-    max-width: 20%;
-    height: 125px;
-    text-align: center;
-    font-size: x-large;
-    background-color: black;
-    color: white;
-    border-radius: 30px;
-}
-*/
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Centrera innehållet horisontellt */
-    height: 100vh;
-    /* Använd 100% av viewport-höjden */
-}
-
-.con1,
-.con2 {
-    width: 45%;
-    /* Minska bredden för att ge lite mellanrum mellan con1 och con2 */
-    padding: 5%;
-    text-align: center;
-}
-
-.con1 {
-    padding-left: 12.5%;
-}
-
-.con2 {
-    padding-right: 5%;
-}
-
-#img-home {
-    display: block;
-    max-width: 70%;
-    /* Se till att bilden anpassar sig till förälderns bredd */
-    height: auto;
-    /* Behåll bildens proportioner */
 }
 
 .to-quiz {
@@ -201,91 +100,3 @@ a {
     color: white;
     border-radius: 30px;
 }
-
-*/ .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Centrera innehållet horisontellt */
-    height: 100vh;
-    /* Använd 100% av viewport-höjden */
-}
-
-.con1,
-.con2 {
-    width: 45%;
-    /* Minska bredden för att ge lite mellanrum mellan con1 och con2 */
-    padding: 5%;
-    text-align: center;
-}
-
-.con1 {
-    padding-left: 12.5%;
-}
-
-.con2 {
-    padding-right: 5%;
-}
-
-#img-home {
-    display: block;
-    max-width: 70%;
-    /* Se till att bilden anpassar sig till förälderns bredd */
-    height: auto;
-    /* Behåll bildens proportioner */
-}
-
-.to-quiz {
-    max-width: 20%;
-    height: 125px;
-    text-align: center;
-    font-size: x-large;
-    background-color: black;
-    color: white;
-    border-radius: 30px;
-}
-
-/*Ifall jag skulle mixtra upp koden igen och behöva återtsälla till originalet
-/*
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
-}
-
-.con1,
-.con2 {
-    width: 45%;
-    
-    padding: 5%;
-    text-align: center;
-}
-
-.con1 {
-    padding-left: 12.5%;
-}
-
-.con2 {
-    padding-right: 5%;
-}
-
-#img-home {
-    display: block;
-    max-width: 70%;
-   
-    height: auto;
-   
-
-.to-quiz {
-    max-width: 20%;
-    height: 125px;
-    text-align: center;
-    font-size: x-large;
-    background-color: black;
-    color: white;
-    border-radius: 30px;
-}
-*/
