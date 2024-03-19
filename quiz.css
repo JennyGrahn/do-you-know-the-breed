@@ -112,13 +112,15 @@ a {
     box-shadow: 0 0 10px 2px;
 }
 
-.answer-btn.correct {
+
+/*.answer-btn.correct {
     background-color: #4CAF50;
 }
 
 .answer-btn.wrong {
     background-color: red;
 }
+*/
 
 .next-btn {
     display: flex;
