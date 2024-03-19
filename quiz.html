@@ -29,22 +29,14 @@
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
     <!--Image of dog breed goes here, and is giong to serve as que for the quiz taker.-->
-    <div id="quiz">
-        <h2></h2>
-        <div class="ans-container">
-            <button class="answer-btn answer-grid"></button>
-            <button class="answer-btn answer-grid"></button>
-            <button class="answer-btn answer-grid"></button>
-
-        </div>
-
-        <button id="next-btn">Next</button>
-        <!--Need to style the results section/page-->
-        <div id="results">
-        </div>
-        <footer>Do you know the breed? 2024</footer>
-        <script src="/javascript/breeds.js"></script>
-        <script src="/javascript/quiz-functions.js"></script>
+    <div id="quiz"></div>
+    <div id="results"></div>
+    <footer>Do you know the breed? 2024</footer>
+    <script src="/javascript/breeds.js"></script>
+    <script src="/javascript/quiz-functions.js"></script>
+    <script>
+        buildQuiz();
+    </script>
 </body>
 
 </html>

@@ -92,7 +92,7 @@ a {
     align-items: center;
 }
 
-.answer-grid {
+div.answer-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 0;
@@ -101,7 +101,7 @@ a {
     /*Adjust as you go along*/
 }
 
-.answer-btn {
+div.answer-btn {
     margin: 50px;
     padding: 25px;
     background-color: white;
@@ -127,3 +127,5 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.results 
