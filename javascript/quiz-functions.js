@@ -11,7 +11,7 @@ function buildQuiz() {
     const output = [];
 
     const answers = [];
-    output.push(`<img src="breed-images/img${questionNumber}.jpg"/>`);
+    //output.push(`<img src="breed-images/img${questionNumber}.jpg"/>`);
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
 
     for (letter in currentQuestion.answers) {

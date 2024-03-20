@@ -4,9 +4,10 @@ const breedQuestions = [{
         answers: {
             a: "Bulldog",
             b: "Labrador Retriever",
-            c: "Shih Tzu"
+            c: "Shih Tzu",
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        image: "/breed-images/img0.jpg",
     },
 
     //Correct answer is German Shepheard
@@ -15,9 +16,10 @@ const breedQuestions = [{
         answers: {
             a: "Japanese Shiba Inu",
             b: "Boxer",
-            c: "German Shepherd"
+            c: "German Shepherd",
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        image: "/breed-images/germanshepherd.jpg",
     },
     //Correct answer is Golden Retriever
     {
@@ -25,9 +27,10 @@ const breedQuestions = [{
         answers: {
             a: "Poodle",
             b: "Pomeranian",
-            c: "Golden Retriever"
+            c: "Golden Retriever",
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        image: "/breed-images/goldenretriever.jpg"
     },
     //Correct answer is Bulldog
     {
@@ -35,9 +38,10 @@ const breedQuestions = [{
         answers: {
             a: "Siberian Huskey",
             b: "Bulldog",
-            c: "Saint Bernard"
+            c: "Saint Bernard",
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        image: "/breed-images/english-bulldog.jpg"
     },
 
     //Correct answer is Beagle
@@ -46,19 +50,21 @@ const breedQuestions = [{
         answers: {
             a: "Beagle",
             b: "French Bulldog",
-            c: "Boxer"
+            c: "Boxer",
         },
-        correctAnswer: "a"
+        correctAnswer: "a",
+        image: "/breed-images/beagle.jpg"
     },
     //Correct answer is Poodle
     {
         question: "Do you know the breed?",
         answers: {
-            a: "Australian Cattle Dog",
+            a: "Borzoi",
             b: "Dachshund",
             c: "Poodle"
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        image: "/breed-images/poodle.jpg"
     },
     //Correct answer is Rottweiler
     {
@@ -68,7 +74,9 @@ const breedQuestions = [{
             b: "Rottweiler",
             c: "Cocker Spaniel"
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        image: "/breed-images/rottweiler.jpg"
+
     },
     //Correct answer is Norfolk Terrier
     {
@@ -78,17 +86,20 @@ const breedQuestions = [{
             b: "Golden Retriever",
             c: "Japanese Shiba Inu"
         },
-        correctAnswer: "a"
+        correctAnswer: "a",
+        image: "/breed-images/norfolkterrier.jpg"
     },
     //Correct answer is Boxer
     {
         question: "Do you know the breed?",
         answers: {
-            a: "Australian Cattle Dog",
+            a: "Borzoi",
             b: "Boxer",
             c: "Dachshund"
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        image: "/breed-images/boxer.jpg"
+
     },
     //Correct answer is Dachshund
     {
@@ -98,7 +109,8 @@ const breedQuestions = [{
             b: "Border Collie",
             c: "Dachshund"
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        image: "/breed-images/dachshund.jpg"
     },
     //Correct answer is Shih Tzu
     {
@@ -108,7 +120,8 @@ const breedQuestions = [{
             b: "Cocker Spaniel",
             c: "French Bulldog"
         },
-        correctAnswer: "a"
+        correctAnswer: "a",
+        image: "/breed-images/shihtzu.jpg"
     },
 
     {
@@ -124,7 +137,7 @@ const breedQuestions = [{
     {
         question: "Do you know the breed?",
         answers: {
-            a: "Australian Cattle Dog",
+            a: "Poodle",
             b: "Siberian Huskey",
             c: "Pomeranian"
         },
@@ -204,7 +217,7 @@ const breedQuestions = [{
     {
         question: "Do you know the breed?",
         answers: {
-            a: "Australian Cattle Dog",
+            a: "Borzoi",
             b: "Boxer",
             c: "Siberian Husky"
         },
