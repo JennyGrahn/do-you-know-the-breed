@@ -123,16 +123,6 @@ const breedQuestions = [{
         correctAnswer: "a",
         image: "/breed-images/shihtzu.jpg"
     },
-
-    {
-        question: "Do you know the breed?",
-        answers: {
-            a: "Shetland Sheepdog",
-            b: "Collie",
-            c: "Malinoise"
-        },
-        correctAnswer: "a"
-    },
     //Correct answer is Siberian Huskey
     {
         question: "Do you know the breed?",
@@ -141,7 +131,8 @@ const breedQuestions = [{
             b: "Siberian Huskey",
             c: "Pomeranian"
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        image: "/breed-images/siberian.jpg"
     },
     //Correct answer is Border Collie
     {
@@ -151,7 +142,8 @@ const breedQuestions = [{
             b: "Beagle",
             c: "Golden Retriever"
         },
-        correctAnswer: "a"
+        correctAnswer: "a",
+        image: "/breed-images/bordercollie.jpg"
     },
     //Correct answer is Australian Shepherd
     {
@@ -161,7 +153,8 @@ const breedQuestions = [{
             b: "Border Collie",
             c: "Australian Shepherd"
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        image: "/breed-images/aussie.jpg"
     },
     //Correct answer is Japanese Shiba Inu
     {
@@ -171,7 +164,8 @@ const breedQuestions = [{
             b: "Japanese Shiba Inu",
             c: "Saint Bernard"
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        image: "/breed-images/shiba.jpg"
     },
     //Correct answer is Cocker Spaniel
     {
@@ -181,7 +175,8 @@ const breedQuestions = [{
             b: "Norfolk Terrier",
             c: "Boxer"
         },
-        correctAnswer: "a"
+        correctAnswer: "a",
+        image: "/breed-images/cockerspaniel.jpg"
     },
     //Correct answer is Saint Bernard
     {
@@ -191,7 +186,9 @@ const breedQuestions = [{
             b: "Labrador Retriever",
             c: "Saint Bernard"
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        image: "/breed-images/saintb.jpg"
+
     },
     //Correct answer is French Bulldog
     {
@@ -201,7 +198,8 @@ const breedQuestions = [{
             b: "French Bulldog",
             c: "Pomeranian"
         },
-        correctAnswer: "b"
+        correctAnswer: "b",
+        image: "/breed-images/frenchbulldog.jpg"
     },
     //Correct answer is Pomeranian
     {
@@ -211,7 +209,8 @@ const breedQuestions = [{
             b: "Shih Tzu",
             c: "Pomeranian"
         },
-        correctAnswer: "c"
+        correctAnswer: "c",
+        image: "/breed-images/pomeranian.jpg"
     },
     //Correct answer is Australian Cattle Dog
     {
@@ -221,6 +220,7 @@ const breedQuestions = [{
             b: "Boxer",
             c: "Siberian Husky"
         },
-        correctAnswer: "a"
+        correctAnswer: "a",
+        image: "/breed-image/borzoi.jpg"
     },
 ];
