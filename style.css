@@ -2,7 +2,7 @@
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -11,15 +11,10 @@ header {
 #header-text {
     font-family: 'Coiny', system-ui;
     max-width: 10%;
-    display: inline-flex;
     text-decoration: none;
-}
-
-.logo {
-    max-width: 9%;
-    max-height: auto;
     margin-right: auto;
 }
+
 
 nav {
     display: inline-block;

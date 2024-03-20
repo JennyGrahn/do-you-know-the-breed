@@ -3,9 +3,8 @@
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    /* Center items vertically */
 }
 
 /*navigation bar*/
@@ -13,16 +12,10 @@ header {
 #header-text {
     font-family: 'Coiny', system-ui;
     max-width: 10%;
-    display: inline-flex;
     text-decoration: none;
-}
-
-.logo {
-    /* Adjust as needed */
-    max-width: 9%;
-    max-height: auto;
     margin-right: auto;
 }
+
 
 nav {
     display: inline-block;
@@ -45,17 +38,6 @@ nav {
     border-radius: 30px;
     padding: 1rem;
     text-decoration: none;
-    /*position: relative;
-    left: 42%;
-    top: 325px;
-    bottom: 75px;
-    max-width: 15%;
-    height: 125px;
-    text-align: center;
-    font-size: x-large;
-    background-color: black;
-    color: white;
-    border-radius: 30px;*/
 }
 
 .line {
@@ -92,16 +74,15 @@ a {
     align-items: center;
 }
 
-div.answer-grid {
+.answer-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 0;
-    /*Add the gap you want*/
     margin: 0 20px;
-    /*Adjust as you go along*/
 }
 
-div.answer-btn {
+
+.answer-btn {
     margin: 50px;
     padding: 25px;
     background-color: white;
@@ -113,19 +94,8 @@ div.answer-btn {
 }
 
 
-/*.answer-btn.correct {
-    background-color: #4CAF50;
-}
-
-.answer-btn.wrong {
-    background-color: red;
-}
-*/
-
 .next-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.results 
