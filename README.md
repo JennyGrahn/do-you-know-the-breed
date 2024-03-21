@@ -44,3 +44,5 @@ Testing
 The outline was copied from https://github.com/IuliiaKonovalova/animal_shelter/tree/main
 
 
+## Resources
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random (to understand math random)
