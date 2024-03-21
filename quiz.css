@@ -91,6 +91,12 @@ a {
     border-width: 2px;
     font-size: larger;
     box-shadow: 0 0 10px 2px;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
 }
 
 

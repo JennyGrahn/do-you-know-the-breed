@@ -6,25 +6,36 @@ let currentQuestion;
 let numCorrect = 0;
 let userAnswerSelector;
 
+//From W3 schools
+/*function shuffleArray(breedQuestions) {
+    for (let i = breedQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return breedQuestions;
+}*/
+
 function buildQuiz() {
+    //breedQuestions = shuffleArray(breedQuestions);
+    //breedQuestions = breedQuestions.sort(() => Math.random() - 0.5);
     currentQuestion = breedQuestions[questionNumber];
-    breedQuestions = breedQuestions.sort(() => Math.random() - 0.5);
+
     const output = [];
     const answers = [];
-    //output.push(`<img src="breed-images/img${questionNumber}.jpg"/>`);
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
     output.push(` <img src= ${
             currentQuestion.image}
         />`);
+    //Test to remove the a, b and c options
     for (letter in currentQuestion.answers) {
         output.push(
             `<div class="answer-btn answer-grid"> <label>
-                  <input type="radio" name="question${questionNumber}" value="${letter}" onclick='showAnswer()'>
-                  ${letter} :
-                  ${currentQuestion.answers[letter]}
+                    <input type="radio" name="question${questionNumber}" value="${letter}" onclick='showAnswer()'>
+                    ${currentQuestion.answers[letter]}
                 </label> </div>`
         );
     }
+
     output.push(`<button id="next-btn"  disabled>Next</button>`);
 
     quizContainer.innerHTML = output.join("");
