@@ -17,15 +17,16 @@ let userAnswerSelector;
 
 function buildQuiz() {
     //breedQuestions = shuffleArray(breedQuestions);
-    //breedQuestions = breedQuestions.sort(() => Math.random() - 0.5);
+    breedQuestions = breedQuestions.sort(() => Math.random() - 0.5);
     currentQuestion = breedQuestions[questionNumber];
 
     const output = [];
     const answers = [];
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
-    output.push(` <img src= ${
-            currentQuestion.image}
+    output.push(` <img class="image" src= ${
+            currentQuestion.image }
         />`);
+
     //Test to remove the a, b and c options
     for (letter in currentQuestion.answers) {
         output.push(

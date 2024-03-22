@@ -62,16 +62,20 @@ a {
 
 /*Quiz styling*/
 
-#breed-img {
-    max-width: 80%;
-    display: block;
-    margin: auto;
+.question {
+    font-size: xx-large;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
 }
 
 .ans-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.image {
+    width: 50%;
 }
 
 .answer-grid {
@@ -105,3 +109,163 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/*Copied from an old project on media queries
+
+/* Media queries */
+
+/* For screens up to 600px */
+
+@media screen and (max-width: 600px) {
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*navigation bar*/
+
+    #header-text {
+        font-family: 'Coiny', system-ui;
+        max-width: 10%;
+        text-decoration: none;
+        margin-right: auto;
+    }
+
+
+    nav {
+        display: inline-block;
+        padding: 0px 1%;
+        padding-top: 5%;
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+    }
+
+    .menu {
+        text-decoration: none;
+        padding-right: 1rem;
+        color: black;
+    }
+
+    .contact {
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .line {
+        border-bottom: 2px solid black;
+    }
+
+}
+
+/* For screens with a minimum width of 601px */
+
+@media screen and (min-width: 601px) {
+    header {
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    #header-text {
+        max-width: none;
+
+        margin-right: 0;
+
+
+        nav {
+            padding-top: 0;
+
+        }
+
+        .menu {
+            padding: 0;
+
+            display: block;
+
+            margin-bottom: 10px;
+
+        }
+
+        .contact {
+            padding: 10px;
+
+        }
+    }
+
+    /* For screens with a minimum width of 768px */
+
+    @media screen and (min-width: 768px) {
+
+
+        h3 {
+            margin: 0 auto;
+        }
+
+        #text {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #header {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+
+
+    }
+
+    /*For screens with a maximum width of 992px*/
+
+    @media screen and (max-width: 992px) {
+
+        h3 {
+
+            margin: 0 auto;
+        }
+
+        #text {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #header {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+    }
+
+    /*For screens with a maximum width of 1200px wide and down */
+
+    @media screen and (max-width: 1200px) {
+        h3 {
+
+            margin: 0 auto;
+        }
+
+        #text {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #header {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+
+    }
