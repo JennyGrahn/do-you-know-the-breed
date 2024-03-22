@@ -1,4 +1,4 @@
-const breedQuestions = [{
+let breedQuestions = [{
         //Correct answer is Labrador retriever 
         question: "Do you know the breed?",
         answers: {
