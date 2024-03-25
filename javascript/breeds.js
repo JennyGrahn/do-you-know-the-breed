@@ -212,7 +212,7 @@ let breedQuestions = [{
         correctAnswer: "c",
         image: "breed-images/pomeranian.jpg"
     },
-    //Correct answer is Australian Cattle Dog
+    //Correct answer is Borzoi
     {
         question: "Do you know the breed?",
         answers: {
@@ -221,6 +221,6 @@ let breedQuestions = [{
             c: "Siberian Husky"
         },
         correctAnswer: "a",
-        image: "breed-image/borzoi.jpg"
+        image: "breed-images/borzoi.jpg"
     },
 ];

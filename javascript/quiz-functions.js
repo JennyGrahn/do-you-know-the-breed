@@ -6,17 +6,8 @@ let currentQuestion;
 let numCorrect = 0;
 let userAnswerSelector;
 
-//From W3 schools
-/*function shuffleArray(breedQuestions) {
-    for (let i = breedQuestions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return breedQuestions;
-}*/
-
 function buildQuiz() {
-    //breedQuestions = shuffleArray(breedQuestions);
+
     breedQuestions = breedQuestions.sort(() => Math.random() - 0.5);
     currentQuestion = breedQuestions[questionNumber];
 

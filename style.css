@@ -87,8 +87,9 @@ a {
 }
 
 .to-quiz {
-    max-width: 20%;
-    height: 125px;
+    width: 35%;
+    height: auto;
+    padding: 4%;
     text-align: center;
     font-size: x-large;
     background-color: black;
@@ -96,12 +97,87 @@ a {
     border-radius: 30px;
 }
 
-@media (max-width: 600px) {}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    /*Copied to style the elements
+/*CSS styling for the header, navigation bar and logo*/
 
-@media (min-width: 601px) {}
+    header {
+       height: 20%;
+    }
 
+    /*navigation bar*/
+
+    #header-text {
+        font-family: 'Coiny', system-ui;
+    }
+
+
+    nav {
+        padding-right: 1%;
+        padding-top: 5%;
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+    }
+
+    .menu {
+        text-decoration: none;
+        padding-right: 1rem;
+        color: black;
+    }
+
+    .contact {
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .line {
+        border-bottom: 2px solid black;
+    }
+
+    /*Text and font styling*/
+
+    h1,
+    h2,
+    p,
+    a {
+        font-family: 'Epilogue', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+    }
+
+    .con1 {
+        text-align: center;
+    }
+
+
+
+    .to-quiz {
+        width: 50%;
+        height: auto;
+        padding: 4%;
+        text-align: center;
+        font-size: x-large;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {}
 
+/*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {}
 
+/*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {}

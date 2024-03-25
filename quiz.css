@@ -66,6 +66,7 @@ a {
     font-size: xx-large;
     font-family: 'Epilogue', sans-serif;
     text-align: center;
+    margin: 5%
 }
 
 .ans-container {
@@ -74,8 +75,12 @@ a {
     align-items: center;
 }
 
-.image {
-    width: 50%;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 70%;
 }
 
 .answer-grid {
@@ -104,60 +109,20 @@ input[type="radio"] {
 }
 
 
-.next-btn {
+#next-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
 
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
 
-/*Copied from on of my old project using its media quiries
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {}
 
-/* Media queries */
-
-/* For screens up to 600px */
-
-@media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-
-    }
-
-    #header-text {
-        max-width: none;
-    }
-
-    nav {
-        padding-top: 0;
-    }
-
-    .menu {
-        padding: 0;
-        display: block;
-        margin-bottom: 10px;
-
-    }
-
-    .contact {
-        padding: 10px;
-
-    }
-}
-
-/* For screens with a minimum width of 601px */
-
-@media screen and (min-width: 601px) {}
-
-/* For screens with a minimum width of 768px */
-
-@media screen and (min-width: 768px) {}
-
-/*For screens with a maximum width of 992px*/
-
-@media screen and (max-width: 992px) {}
-
-/*For screens with a maximum width of 1200px wide and down */
-
-@media screen and (max-width: 1200px) {}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
