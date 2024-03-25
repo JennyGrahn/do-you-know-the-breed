@@ -14,8 +14,7 @@ function buildQuiz() {
     const output = [];
     const answers = [];
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
-    output.push(` <img class="image" src= ${
-            currentQuestion.image }
+    output.push(` <img src=" ${currentQuestion.image.src}" alt="${currentQuestion.image.alt}
         />`);
 
     //Test to remove the a, b and c options

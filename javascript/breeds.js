@@ -7,8 +7,14 @@ let breedQuestions = [{
             c: "Shih Tzu",
         },
         correctAnswer: "b",
-        image: "breed-images/img0.jpg",
+        image: {
+            src: "breed-images/img0.jpg",
+            alt: "A black retriever dog",
+        },
     },
+    /* correctAnswer: "b",
+        image: "breed-images/img0.jpg",
+    },*/
 
     //Correct answer is German Shepheard
     {
@@ -19,8 +25,14 @@ let breedQuestions = [{
             c: "German Shepherd",
         },
         correctAnswer: "c",
-        image: "breed-images/germanshepherd.jpg",
+        image: {
+            src: "breed-images/germanshepherd.jpg",
+            alt: "A brown and black coated sheepdog",
+        },
     },
+    /* correctAnswer: "c",
+        image: "breed-images/germanshepherd.jpg",
+    },*/
     //Correct answer is Golden Retriever
     {
         question: "Do you know the breed?",
@@ -30,7 +42,12 @@ let breedQuestions = [{
             c: "Golden Retriever",
         },
         correctAnswer: "c",
-        image: "breed-images/goldenretriever.jpg"
+        image: {
+            src: "breed-images/goldenretriever.jpg",
+            alt: "A large dog with a golden fur, popular among families because of it's friendly nature",
+        },
+
+
     },
     //Correct answer is Bulldog
     {
@@ -41,7 +58,11 @@ let breedQuestions = [{
             c: "Saint Bernard",
         },
         correctAnswer: "b",
-        image: "breed-images/english-bulldog.jpg"
+        image: {
+            src: "breed-images/english-bulldog.jpg",
+            alt: "A smaller stocky breed from England",
+        },
+
     },
 
     //Correct answer is Beagle
@@ -53,8 +74,12 @@ let breedQuestions = [{
             c: "Boxer",
         },
         correctAnswer: "a",
-        image: "breed-images/beagle.jpg"
+        image: {
+            src: "breed-images/beagle.jpg",
+            alt: "A hunting dog from Britain, the name is similar to a kind of american bread",
+        },
     },
+
     //Correct answer is Poodle
     {
         question: "Do you know the breed?",
@@ -64,8 +89,12 @@ let breedQuestions = [{
             c: "Poodle"
         },
         correctAnswer: "c",
-        image: "breed-images/poodle.jpg"
+        image: {
+            src: "breed-images/poodle.jpg",
+            alt: "A small dog, often beautifully cut and the epitomy of a show dog ",
+        },
     },
+
     //Correct answer is Rottweiler
     {
         question: "Do you know the breed?",
@@ -75,9 +104,12 @@ let breedQuestions = [{
             c: "Cocker Spaniel"
         },
         correctAnswer: "b",
-        image: "breed-images/rottweiler.jpg"
-
+        image: {
+            src: "breed-images/rottweiler.jpg",
+            alt: "A big black and tan dog often used for guarding",
+        }
     },
+
     //Correct answer is Norfolk Terrier
     {
         question: "Do you know the breed?",
@@ -87,8 +119,13 @@ let breedQuestions = [{
             c: "Japanese Shiba Inu"
         },
         correctAnswer: "a",
-        image: "breed-images/norfolkterrier.jpg"
+        image: {
+            src: "breed-images/norfolkterrier.jpg",
+            alt: "A small brown terrier",
+        }
+
     },
+
     //Correct answer is Boxer
     {
         question: "Do you know the breed?",
@@ -98,9 +135,12 @@ let breedQuestions = [{
             c: "Dachshund"
         },
         correctAnswer: "b",
-        image: "breed-images/boxer.jpg"
-
+        image: {
+            src: "breed-images/boxer.jpg",
+            alt: "A medium to large-sized breed known for its muscular build, energetic and loyal nature, intelligence",
+        }
     },
+
     //Correct answer is Dachshund
     {
         question: "Do you know the breed?",
@@ -110,7 +150,10 @@ let breedQuestions = [{
             c: "Dachshund"
         },
         correctAnswer: "c",
-        image: "breed-images/dachshund.jpg"
+        image: {
+            src: "breed-images/dachshund.jpg",
+            alt: "A small to medium-sized breed known for its elongated body, short legs, playful demeanor, and propensity for digging",
+        }
     },
     //Correct answer is Shih Tzu
     {
@@ -123,6 +166,7 @@ let breedQuestions = [{
         correctAnswer: "a",
         image: "breed-images/shihtzu.jpg"
     },
+
     //Correct answer is Siberian Huskey
     {
         question: "Do you know the breed?",
@@ -132,8 +176,12 @@ let breedQuestions = [{
             c: "Pomeranian"
         },
         correctAnswer: "b",
-        image: "breed-images/siberian.jpg"
+        image: {
+            src: "breed-images/siberian.jpg",
+            alt: "A medium-sized breed recognized for its thick double coat, striking appearance with distinctive facial markings, high energy levels, strong endurance, and friendly disposition.",
+        }
     },
+
     //Correct answer is Border Collie
     {
         question: "Do you know the breed?",
@@ -143,8 +191,12 @@ let breedQuestions = [{
             c: "Golden Retriever"
         },
         correctAnswer: "a",
-        image: "breed-images/bordercollie.jpg"
+        image: {
+            src: "breed-images/bordercollie.jpg",
+            alt: "A highly intelligent herding breed known for its exceptional work ethic, remarkable agility, intense focus, and strong desire to please its handler.",
+        }
     },
+
     //Correct answer is Australian Shepherd
     {
         question: "Do you know the breed?",
@@ -154,8 +206,12 @@ let breedQuestions = [{
             c: "Australian Shepherd"
         },
         correctAnswer: "c",
-        image: "breed-images/aussie.jpg"
+        image: {
+            src: "breed-images/aussie.jpg",
+            alt: "Originating from Australia, this breed is celebrated for its adaptability and intelligence making it a valuable asset in various tasks and activities requiring agility and sharp instincts.",
+        }
     },
+
     //Correct answer is Japanese Shiba Inu
     {
         question: "Do you know the breed?",
@@ -165,8 +221,12 @@ let breedQuestions = [{
             c: "Saint Bernard"
         },
         correctAnswer: "b",
-        image: "breed-images/shiba.jpg"
+        image: {
+            src: "breed-images/shiba.jpg",
+            alt: "From Japan, this breed is characterized by its small to medium size, fox-like appearance, spirited demeanor, and distinctive curled tail.",
+        }
     },
+
     //Correct answer is Cocker Spaniel
     {
         question: "Do you know the breed?",
@@ -176,7 +236,10 @@ let breedQuestions = [{
             c: "Boxer"
         },
         correctAnswer: "a",
-        image: "breed-images/cockerspaniel.jpg"
+        image: {
+            src: "breed-images/cockerspaniel.jpg",
+            alt: "Originating from England, this breed is characterized by its silky coat, long ears, and cheerful disposition.",
+        }
     },
     //Correct answer is Saint Bernard
     {
@@ -187,7 +250,11 @@ let breedQuestions = [{
             c: "Saint Bernard"
         },
         correctAnswer: "c",
-        image: "breed-images/saintb.jpg"
+        image: {
+            src: "breed-images/saintb.jpg",
+            alt: "From the Swiss Alps, this large and gentle breed is renowned for its imposing size, thick fur, and legendary reputation as a rescue dog.",
+        }
+
 
     },
     //Correct answer is French Bulldog
@@ -199,8 +266,12 @@ let breedQuestions = [{
             c: "Pomeranian"
         },
         correctAnswer: "b",
-        image: "breed-images/frenchbulldog.jpg"
+        image: {
+            src: "breed-images/frenchbulldog.jpg",
+            alt: "Originating in France, this small, muscular breed is known for its distinctive bat-like ears and affectionate personality, making it a popular choice for urban living.",
+        }
     },
+
     //Correct answer is Pomeranian
     {
         question: "Do you know the breed?",
@@ -210,8 +281,12 @@ let breedQuestions = [{
             c: "Pomeranian"
         },
         correctAnswer: "c",
-        image: "breed-images/pomeranian.jpg"
+        image: {
+            src: "breed-images/pomeranian.jpg",
+            alt: "This small breed, originating from Germany and is characterized by its fluffy double coat",
+        }
     },
+
     //Correct answer is Borzoi
     {
         question: "Do you know the breed?",
@@ -221,6 +296,9 @@ let breedQuestions = [{
             c: "Siberian Husky"
         },
         correctAnswer: "a",
-        image: "breed-images/borzoi.jpg"
+        image: {
+            src: "breed-images/borzoi.jpg",
+            alt: "This breed from Russia is distinguished by its tall and slender build, long silky coat, graceful movements and was historically used in hunting",
+        }
     },
 ];
