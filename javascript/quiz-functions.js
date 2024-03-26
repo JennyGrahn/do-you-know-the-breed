@@ -6,29 +6,38 @@ let currentQuestion;
 let numCorrect = 0;
 let userAnswerSelector;
 
+const randomAnswers = () => {
+    let answers = [];
+    for (let property in currentQuestion.answers) {
+        answers.push(currentQuestion.answers[property]);
+    }
+
+    answers.sort(() => Math.random() - 0.5);
+    let index = 0;
+    for (let property in currentQuestion.answers) {
+        currentQuestion.answers[property] = answers[index];
+        index++;
+    }
+};
+
 function buildQuiz() {
-
-    breedQuestions = breedQuestions.sort(() => Math.random() - 0.5);
     currentQuestion = breedQuestions[questionNumber];
-
     const output = [];
-    const answers = [];
+    let answers = [];
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
     output.push(` <img src=" ${currentQuestion.image.src}" alt="${currentQuestion.image.alt}
         />`);
-
-    //Test to remove the a, b and c options
+    randomAnswers();
     for (letter in currentQuestion.answers) {
         output.push(
             `<div class="answer-btn answer-grid"> <label>
-                    <input type="radio" name="question${questionNumber}" value="${letter}" onclick='showAnswer()'>
+                    <input type="radio" name="question${questionNumber}" value="${letter}" onclick='showAnswer()'/>
                     ${currentQuestion.answers[letter]}
                 </label> </div>`
         );
     }
 
     output.push(`<button id="next-btn"  disabled>Next</button>`);
-
     quizContainer.innerHTML = output.join("");
     const nextButton = document.getElementById("next-btn");
     nextButton.addEventListener("click", nextBtnHandler);
