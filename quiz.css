@@ -115,6 +115,16 @@ input[type="radio"] {
     align-items: center;
 }
 
+footer {
+    font-family: 'Epilogue', sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding-top: 2em;
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid black;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {}
 

@@ -72,20 +72,10 @@ a {
     padding: 5%;
     text-align: center;
     display: flex;
-    /* Added */
     flex-direction: column;
-    /* Added */
     align-items: center;
-    /* Added */
 }
 
-/*.con1 {
-    padding-left: 12.5%;
-}*/
-
-/*.con2 {
-    padding-right: 5%;
-}*/
 
 #img-home {
     display: block;
@@ -110,7 +100,7 @@ footer {
     text-align: center;
     padding-top: 2em;
     width: 100%;
-    height: 50px;
+    height: 40px;
     border-top: 2px solid black;
 }
 
