@@ -38,23 +38,16 @@
                 will be highlighted in green. Please note that once you click on an answer, it cannot be undone.
             </p>
             <p class="p-center">Now go and find out how much you really know!</p>
+            <!--Button redirecting the user to the quiz-->
+            <button onclick="redirect()" id="to-quiz-btn">LET'S BEGIN🔥</button>
+            <script>
+                function redirect() {
+                    window.location.href = 'quiz.html'
+                }
+            </script>
         </div>
-        <!--Button redirecting the user to the quiz-->
-        <button onclick="redirect()" id="to-quiz-btn">LET'S BEGIN🔥</button>
-        <!--Should the script tag be placed here? Speak with Eman-->
     </div>
-    <script>
-        function redirect() {
-            window.location.href = 'quiz.html'
-        }
-    </script>
     <script src="quiz.js"></script>
-
-    <br>
-
-
-
-
     <footer>Do you know the breeds? 2024</footer>
 </body>
 

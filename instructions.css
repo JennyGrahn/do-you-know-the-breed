@@ -70,6 +70,7 @@ a {
     text-align: center;
 }
 
+
 /*CSS for the button*/
 
 #to-quiz-btn {
@@ -80,7 +81,8 @@ a {
     background-color: black;
     color: white;
     border-radius: 30px;
-
+    text-align: center;
+    display: inline-block;
 }
 
 /*Small devices (landscape phones, 576px and up)*/

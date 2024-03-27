@@ -1,3 +1,4 @@
+//The followig orignal code structur is partly copied from https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp and https://webdesign.tutsplus.com/multiple-choice-quiz-app-with-javascript--cms-107756t 
 const quizContainer = document.getElementById("quiz");
 const resultsContainer = document.getElementById("results");
 
@@ -58,6 +59,7 @@ const nextBtnHandler = function () {
     }
 };
 
+
 const showAnswer = function () {
     document.getElementById("next-btn").disabled = false;
     document
@@ -68,8 +70,8 @@ const showAnswer = function () {
     userAnswerSelector = document.querySelector(selector) || {};
 
     if (userAnswerSelector.value === currentQuestion.correctAnswer) {
-        userAnswerSelector.parentElement.style.color = "lightgreen";
+        userAnswerSelector.parentElement.style.backgroundColor = "lightgreen";
     } else {
-        userAnswerSelector.parentElement.style.color = "red";
+        userAnswerSelector.parentElement.style.backgroundColor = "red";
     }
 };
