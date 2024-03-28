@@ -12,9 +12,6 @@ let breedQuestions = [{
             alt: "A black retriever dog",
         },
     },
-    /* correctAnswer: "b",
-        image: "breed-images/img0.jpg",
-    },*/
 
     //Correct answer is German Shepheard
     {

@@ -7,6 +7,8 @@ let currentQuestion;
 let numCorrect = 0;
 let userAnswerSelector;
 
+breedQuestions.sort(() => Math.random() - 0.5);
+
 const randomAnswers = () => {
     let answers = [];
     for (let property in currentQuestion.answers) {
@@ -26,7 +28,7 @@ function buildQuiz() {
     const output = [];
     let answers = [];
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
-    output.push(` <img src=" ${currentQuestion.image.src}" alt="${currentQuestion.image.alt}
+    output.push(` <img src=" ${currentQuestion.image.src}" alt="${currentQuestion.image.alt}"
         />`);
     randomAnswers();
     for (letter in currentQuestion.answers) {
@@ -64,7 +66,7 @@ const showAnswer = function () {
     document.getElementById("next-btn").disabled = false;
     document
         .querySelectorAll(`input[name=question${questionNumber}]`)
-        .forEach((element) => (element.parentElement.style.color = "black"));
+        .forEach((element) => (element.parentElement.style.backgroundColor = "white"));
 
     const selector = `input[name=question${questionNumber}]:checked`;
     userAnswerSelector = document.querySelector(selector) || {};
