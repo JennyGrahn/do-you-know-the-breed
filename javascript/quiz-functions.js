@@ -26,7 +26,7 @@ const randomAnswers = () => {
 function buildQuiz() {
     currentQuestion = breedQuestions[questionNumber];
     const output = [];
-    let answers = [];
+
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
     output.push(` <img src=" ${currentQuestion.image.src}" alt="${currentQuestion.image.alt}"
         />`);
@@ -49,11 +49,11 @@ function buildQuiz() {
 //Next button to generate the next question
 const nextBtnHandler = function () {
     questionNumber++;
-    if (questionNumber < breedQuestions.length) {
+    if (questionNumber <= breedQuestions.length) {
         if (userAnswerSelector.value === currentQuestion.correctAnswer)
             numCorrect++;
 
-        buildQuiz();
+        if (questionNumber < breedQuestions.length) buildQuiz();
     } else {
         quizContainer.innerHTML = "";
         let result = document.getElementById("results");
@@ -61,19 +61,24 @@ const nextBtnHandler = function () {
     }
 };
 
-
 const showAnswer = function () {
     document.getElementById("next-btn").disabled = false;
     document
         .querySelectorAll(`input[name=question${questionNumber}]`)
-        .forEach((element) => (element.parentElement.style.backgroundColor = "white"));
+        .forEach(
+            (element) => {
+                element.parentElement.parentElement.classList.remove();
+                element.parentElement.parentElement.classList.remove();
+            });
 
     const selector = `input[name=question${questionNumber}]:checked`;
     userAnswerSelector = document.querySelector(selector) || {};
 
     if (userAnswerSelector.value === currentQuestion.correctAnswer) {
-        userAnswerSelector.parentElement.style.backgroundColor = "lightgreen";
+        userAnswerSelector.parentElement.parentElement.style.backgroundColor =
+            "lightgreen";
     } else {
-        userAnswerSelector.parentElement.style.backgroundColor = "red";
+        userAnswerSelector.parentElement.parentElement.style.backgroundColor =
+            "red";
     }
 };
