@@ -67,18 +67,22 @@ const showAnswer = function () {
         .querySelectorAll(`input[name=question${questionNumber}]`)
         .forEach(
             (element) => {
-                element.parentElement.parentElement.classList.remove();
-                element.parentElement.parentElement.classList.remove();
+                element.parentElement.parentElement.classList.remove("correctAnswer");
+                element.parentElement.parentElement.classList.remove("wrongAnswer");
             });
 
     const selector = `input[name=question${questionNumber}]:checked`;
     userAnswerSelector = document.querySelector(selector) || {};
 
     if (userAnswerSelector.value === currentQuestion.correctAnswer) {
-        userAnswerSelector.parentElement.parentElement.style.backgroundColor =
-            "lightgreen";
+        userAnswerSelector.parentElement.parentElement.classList.add("correctAnswer");
+        document.querySelectorAll("input[type=radio").forEach((item) => {
+            if (
+                item.parentElement.parentElement.classList.contains("correctAnswer") == false
+            )
+                item.disabled = true;
+        });
     } else {
-        userAnswerSelector.parentElement.parentElement.style.backgroundColor =
-            "red";
+        userAnswerSelector.parentElement.parentElement.classList.add("wrongAnswer");
     }
 };
