@@ -1,5 +1,7 @@
 /*CSS styling for the header, navigation bar and logo*/
-
+body {
+    background-color: #f5f5f5;
+}
 
 header {
     display: flex;
@@ -108,6 +110,13 @@ input[type="radio"] {
     display: none;
 }
 
+.correctAnswer {
+    background-color: #4caf50;
+}
+
+.cwrongAnswer {
+    background-color: #ff4500;
+}
 
 #next-btn {
     display: flex;
@@ -124,6 +133,7 @@ footer {
     height: 40px;
     border-top: 2px solid black;
 }
+
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {}
