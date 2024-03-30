@@ -57,7 +57,7 @@ const nextBtnHandler = function () {
         if (questionNumber < breedQuestions.length) buildQuiz();
     } else {
         quizContainer.innerHTML = "";
-        let result = document.getElementById("results");
+        let result = document.getElementById("results-bar");
         result.innerHTML = ` you have ${numCorrect} correct answers`;
     }
 };
