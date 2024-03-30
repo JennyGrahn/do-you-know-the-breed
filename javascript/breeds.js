@@ -161,7 +161,10 @@ let breedQuestions = [{
             c: "French Bulldog"
         },
         correctAnswer: "Shih Tzu",
-        image: "breed-images/shihtzu.jpg"
+        image: {
+            src: "breed-images/shihtzu.jpg",
+            alt: "The Shih Tzu is a small, long-haired toy dog breed known for its distinctive lion-like appearance.",
+        }
     },
 
     //Correct answer is Siberian Huskey
