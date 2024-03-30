@@ -1,6 +1,7 @@
 //The followig orignal code structur is partly copied from https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp and https://webdesign.tutsplus.com/multiple-choice-quiz-app-with-javascript--cms-107756t 
 const quizContainer = document.getElementById("quiz");
 const resultsContainer = document.getElementById("results");
+let resultsBar = document.getElementById("results-bar")
 
 let questionNumber = 0;
 let currentQuestion;
@@ -86,3 +87,49 @@ const showAnswer = function () {
         userAnswerSelector.parentElement.parentElement.classList.add("wrongAnswer");
     }
 };
+
+//Code strcuture from kimmobrunfeldth https://jsfiddle.net/a1jxf7b6/3/
+
+resultsBar = new ProgressBar.Circle(container, {
+    color: '#4CAF50',
+    // This has to be the same size as the maximum width to
+    // prevent clipping
+    strokeWidth: 4,
+    trailWidth: 1,
+    easing: 'easeInOut',
+    duration: 1400,
+    text: {
+        autoStyleContainer: false
+    },
+    from: {
+        color: '#aaa',
+        width: 1
+    },
+    to: {
+        color: '#333',
+        width: 4
+    },
+
+    step: function (state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
+
+        var value = Math.round(circle.value() * 100);
+        if (value <= 25) {
+            circle.setText('Have you done your homework?🤔'); //
+        } else if (value <= 50) {
+            circle.setText('Keep it up! You will get there');
+        } else if (value <= 75) {
+            circle.setText('You are an expert👏');
+        } else if (value < 100) {
+            circle.setText('So close🙏');
+        } else if (value === 100) {
+            circle.setText('YOU DID IT!🥳');
+        }
+    }
+});
+
+bar.text.style.fontFamily = 'Epilogue', sans - serif;
+bar.text.style.fontSize = '2rem';
+
+bar.animate(0.8);
