@@ -27,7 +27,7 @@ const randomAnswers = () => {
 function buildQuiz() {
     currentQuestion = breedQuestions[questionNumber];
     const output = [];
-
+    let answers = [];
     output.push(`<div class="question"> ${currentQuestion.question} </div>`);
     output.push(` <img src=" ${currentQuestion.image.src}" alt="${currentQuestion.image.alt}"
         />`);
@@ -35,7 +35,7 @@ function buildQuiz() {
     for (letter in currentQuestion.answers) {
         output.push(
             `<div class="answer-btn answer-grid"> <label>
-                    <input type="radio" name="question${questionNumber}" value="${letter}" onclick='showAnswer()'/>
+                    <input type="radio" name="question${questionNumber}" value="${currentQuestion.answers[letter]}" onclick='showAnswer()'/>
                     ${currentQuestion.answers[letter]}
                 </label> </div>`
         );
@@ -66,20 +66,23 @@ const showAnswer = function () {
     document.getElementById("next-btn").disabled = false;
     document
         .querySelectorAll(`input[name=question${questionNumber}]`)
-        .forEach(
-            (element) => {
-                element.parentElement.parentElement.classList.remove("correctAnswer");
-                element.parentElement.parentElement.classList.remove("wrongAnswer");
-            });
+        .forEach((element) => {
+            element.parentElement.parentElement.classList.remove("correctAnswer");
+            element.parentElement.parentElement.classList.remove("wrongAnswer");
+        });
 
     const selector = `input[name=question${questionNumber}]:checked`;
     userAnswerSelector = document.querySelector(selector) || {};
 
     if (userAnswerSelector.value === currentQuestion.correctAnswer) {
-        userAnswerSelector.parentElement.parentElement.classList.add("correctAnswer");
-        document.querySelectorAll("input[type=radio").forEach((item) => {
+        userAnswerSelector.parentElement.parentElement.classList.add(
+            "correctAnswer"
+        );
+
+        document.querySelectorAll("input[type=radio]").forEach((item) => {
             if (
-                item.parentElement.parentElement.classList.contains("correctAnswer") == false
+                item.parentElement.parentElement.classList.contains("correctAnswer") ==
+                false
             )
                 item.disabled = true;
         });
@@ -88,7 +91,7 @@ const showAnswer = function () {
     }
 };
 
-//Code strcuture from kimmobrunfeldth https://jsfiddle.net/a1jxf7b6/3/
+//Code structure from kimmobrunfeldth https://jsfiddle.net/a1jxf7b6/3/ with some changes to customize it
 
 resultsBar = new ProgressBar.Circle(container, {
     color: '#4CAF50',
