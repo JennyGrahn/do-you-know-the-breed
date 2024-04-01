@@ -1,4 +1,9 @@
 /*CSS styling for the header, navigation bar and logo*/
+* {
+    margin: 0;
+    padding: auto;
+}
+
 body {
     background-color: #f5f5f5;
 }
@@ -114,7 +119,7 @@ input[type="radio"] {
     background-color: #4caf50;
 }
 
-.cwrongAnswer {
+.wrongAnswer {
     background-color: #ff4500;
 }
 
@@ -133,6 +138,7 @@ footer {
     height: 40px;
     border-top: 2px solid black;
 }
+
 
 
 /*Small devices (landscape phones, 576px and up)*/

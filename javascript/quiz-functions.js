@@ -1,7 +1,7 @@
 //The followig orignal code structur is partly copied from https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp and https://webdesign.tutsplus.com/multiple-choice-quiz-app-with-javascript--cms-107756t 
 const quizContainer = document.getElementById("quiz");
 const resultsContainer = document.getElementById("results");
-let resultsBar = document.getElementById("results-bar")
+/*let resultsBar = document.getElementById("results-bar")*/
 
 let questionNumber = 0;
 let currentQuestion;
@@ -47,6 +47,22 @@ function buildQuiz() {
     nextButton.addEventListener("click", nextBtnHandler);
 }
 
+var progressCircle = new ProgressCircle("#progress-circle-container", true);
+
+function updateProgressCircle(cirrectAnswers, totalQuestions) {
+    var percent = (correctAnswers / totalQuestions) * 100;
+
+    var pData = {
+        text: percent.toFixed(0) + "%",
+        percent: percent,
+        color: "green",
+        textColor: "grey"
+    };
+    progressCircle.change(pData);
+}
+
+updateProgressCircle(correctAnswer <= 5, correctAnswer <= 10, correctAnswer <= 15, correctAnswer <= 19, correctAnswer === 20);
+
 //Next button to generate the next question
 const nextBtnHandler = function () {
     questionNumber++;
@@ -54,11 +70,14 @@ const nextBtnHandler = function () {
         if (userAnswerSelector.value === currentQuestion.correctAnswer)
             numCorrect++;
 
-        if (questionNumber < breedQuestions.length) buildQuiz();
+        if (questionNumber < breedQuestions.length) buildQuiz(); {
+            buildQuiz();
+            updateProgressCircle((questionNumber / breedQuestions.length) * 100);
+        }
     } else {
         quizContainer.innerHTML = "";
-        let result = document.getElementById("results-bar");
-        result.innerHTML = ` you have ${numCorrect} correct answers`;
+        let result = document.getElementById("results-circle-container");
+        result.innerHTML = ` you have ${numCorrect} of 20 correct answers`;
     }
 };
 
@@ -91,48 +110,37 @@ const showAnswer = function () {
     }
 };
 
-//Code structure from kimmobrunfeldth https://jsfiddle.net/a1jxf7b6/3/ with some changes to customize it
+//From https://www.cssscript.com/circle-progress-bar/
 
-resultsBar = new ProgressBar.Circle(container, {
-    color: '#4CAF50',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
-    strokeWidth: 4,
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-        autoStyleContainer: false
-    },
-    from: {
-        color: '#aaa',
-        width: 1
-    },
-    to: {
-        color: '#333',
-        width: 4
-    },
+var instance = new ProgressCircle("#example", true);
 
-    step: function (state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-        circle.path.setAttribute('stroke-width', state.width);
+var pData = {
+    text: "64%",
+    percent: 64,
+    lines: [{
+        text: "Line 1"
+    }, {
+        text: "Line 2"
+    }, {
+        text: "Line 3"
+    }],
+    color: "green",
+    textColor: "grey"
+};
 
-        var value = Math.round(circle.value() * 100);
-        if (value <= 25) {
-            circle.setText('Have you done your homework?🤔'); //
-        } else if (value <= 50) {
-            circle.setText('Keep it up! You will get there');
-        } else if (value <= 75) {
-            circle.setText('You are an expert👏');
-        } else if (value < 100) {
-            circle.setText('So close🙏');
-        } else if (value === 100) {
-            circle.setText('YOU DID IT!🥳');
-        }
-    }
-});
+instance.load(pData);
 
-bar.text.style.fontFamily = 'Epilogue', sans - serif;
-bar.text.style.fontSize = '2rem';
-
-bar.animate(0.8);
+instance.change({
+    text: "90%",
+    percent: 90,
+    lines: [{
+        text: "Line 4"
+    }, {
+        text: "Line 5"
+    }, {
+        text: "Line 6"
+    }],
+    color: "green",
+    textColor: "grey",
+    index: 5,
+})
