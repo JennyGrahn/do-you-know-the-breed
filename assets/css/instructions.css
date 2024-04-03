@@ -62,13 +62,19 @@ a {
     width: 900px;
     margin: 250px auto;
     text-align: center;
-
 }
 
-.h1-center,
-.p-center {
+
+.con1 {
+    margin: 200px;
+    width: 45%;
+    padding: 5%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 
 /*CSS for the button*/
@@ -95,74 +101,110 @@ footer {
     border-top: 2px solid black;
 }
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-    /*Copied to style the elements
-/*CSS styling for the header, navigation bar and logo*/
+/*Standard breakpoints from w3  schools https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp*/
 
-    header {
-        height: 20%;
-    }
-
-    /*navigation bar*/
-
-    #header-text {
-        font-family: 'Coiny', system-ui;
-    }
-
-
-    nav {
-        padding-right: 1%;
-        padding-top: 5%;
-        text-decoration: none;
-        color: black;
-        font-size: 22px;
-    }
-
-    .menu {
-        text-decoration: none;
-        padding-right: 1rem;
-        color: black;
-    }
-
-    .contact {
-        background-color: black;
-        color: white;
-        border-radius: 30px;
-        padding: 1rem;
-        text-decoration: none;
-    }
-
-    .line {
-        border-bottom: 2px solid black;
-    }
-
-    /*Text and font styling*/
-
-    h1,
-    h2,
-    p,
-    a {
-        font-family: 'Epilogue', sans-serif;
-    }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 
     .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40vh;
-    }
-
-
-
-    .con1 {
+        width: 50px;
+        height: 800px;
+        margin: 20 auto 0;
         text-align: center;
     }
 
+    #to-quiz-btn {
+        max-width: 35%;
+        height: 125px;
+        padding: 15px;
+        font-size: x-large;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 570px;
+        height: 450px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #to-quiz-btn {
+        max-width: 35%;
+        height: 125px;
+        padding: 15px;
+        font-size: x-large;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 200px;
+        height: 800px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+
+    .con1 {
+        margin: 75px;
+        width: 80%;
+        padding: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #to-quiz-btn {
+        max-width: 35%;
+        height: 125px;
+        padding: 15px;
+        font-size: x-large;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .container {
+        width: 900px;
+        margin: 250px auto;
+        text-align: center;
+    }
+
+    .con1 {
+        margin: 75px;
+        width: 80%;
+        padding: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .to-quiz {
-        width: 20%;
+        width: 22%;
         height: auto;
-        padding: 4%;
+        padding: 2%;
         text-align: center;
         font-size: x-large;
         background-color: black;
@@ -171,11 +213,33 @@ footer {
     }
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 820px;
+    }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
+    .con1 {
+        margin: 75px;
+        width: 80%;
+        padding: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+    .to-quiz {
+        width: 18%;
+        height: auto;
+        padding: 2%;
+        text-align: center;
+        font-size: x-large;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+    }
+}
