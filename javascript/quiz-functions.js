@@ -1,7 +1,10 @@
-//The followig orignal code structur is partly copied from https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp and https://webdesign.tutsplus.com/multiple-choice-quiz-app-with-javascript--cms-107756t 
+//The followig orignal code structur is partly copied from https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp and https://webdesign.tutsplus.com/multiple-choice-quiz-app-with-javascript--cms-107756t
 const quizContainer = document.getElementById("quiz");
 const resultsContainer = document.getElementById("results");
-/*let resultsBar = document.getElementById("results-bar")*/
+const progressCircleContainer = document.querySelector(
+    "#progress-circle-container"
+);
+progressCircleContainer.style.display = "none";
 
 let questionNumber = 0;
 let currentQuestion;
@@ -47,23 +50,25 @@ function buildQuiz() {
     nextButton.addEventListener("click", nextBtnHandler);
 }
 
-//From https://www.cssscript.com/circle-progress-bar/
+let instance = new ProgressCircle("#progress-circle-container", true, [{
+    text: "0%",
+    percent: 0,
+    color: "green",
+    textColor: "grey",
+}, ]);
 
-var progressCircle = new ProgressCircle("#progress-circle-container", true);
-
-function updateProgressCircle(cirrectAnswers, totalQuestions) {
-    var percent = (correctAnswers / totalQuestions) * 100;
+function updateProgressCircle(totalQuestions) {
+    var percent = (numCorrect / totalQuestions) * 100;
 
     var pData = {
         text: percent.toFixed(0) + "%",
         percent: percent,
         color: "green",
-        textColor: "grey"
+        textColor: "grey",
     };
-    progressCircle.change(pData);
-}
 
-updateProgressCircle(correctAnswer <= 5, correctAnswer <= 10, correctAnswer <= 15, correctAnswer <= 19, correctAnswer === 20);
+    instance.update(pData);
+}
 
 //Next button to generate the next question
 const nextBtnHandler = function () {
@@ -72,15 +77,14 @@ const nextBtnHandler = function () {
         if (userAnswerSelector.value === currentQuestion.correctAnswer)
             numCorrect++;
 
-        if (questionNumber < breedQuestions.length) buildQuiz(); {
-            buildQuiz();
-            updateProgressCircle((questionNumber / breedQuestions.length) * 100);
-        }
+        if (questionNumber < breedQuestions.length) buildQuiz();
     } else {
         quizContainer.innerHTML = "";
-        let result = document.getElementById("results-circle-container");
-        result.innerHTML = ` you have ${numCorrect} of 20 correct answers`;
+        let result = document.getElementById("result");
+        result.innerHTML = ` you have ${numCorrect} out of 20 correct answers`;
+        progressCircleContainer.style.display = "block";
     }
+    updateProgressCircle(20);
 };
 
 const showAnswer = function () {

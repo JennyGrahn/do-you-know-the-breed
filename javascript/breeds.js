@@ -100,7 +100,7 @@ let breedQuestions = [{
             b: "Rottweiler",
             c: "Cocker Spaniel"
         },
-        correctAnswer: "Rottwelier",
+        correctAnswer: "Rottweiler",
         image: {
             src: "breed-images/rottweiler.jpg",
             alt: "A big black and tan dog often used for guarding",
