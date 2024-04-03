@@ -139,16 +139,168 @@ footer {
     border-top: 2px solid black;
 }
 
+/*Standard breakpoints from w3  schools https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp*/
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 70%;
+    }
+
+    .answer-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .answer-btn {
+        padding: 15px;
+        width: 65%;
+        background-color: white;
+        border-radius: 30px;
+        border: 2px solid black;
+        font-size: larger;
+        box-shadow: 0 0 10px 2px;
+        font-family: 'Epilogue', sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
 
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 70%;
+    }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {}
+    .answer-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
+    }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {}
+    .answer-btn {
+        padding: 15px;
+        width: 67%;
+        background-color: white;
+        border-radius: 30px;
+        border: 2px solid black;
+        font-size: larger;
+        box-shadow: 0 0 10px 2px;
+        font-family: 'Epilogue', sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 70%;
+    }
+
+    .answer-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .answer-btn {
+        padding: 15px;
+        width: 67%;
+        background-color: white;
+        border-radius: 30px;
+        border: 2px solid black;
+        font-size: larger;
+        box-shadow: 0 0 10px 2px;
+        font-family: 'Epilogue', sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 70%;
+    }
+
+    .answer-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .answer-btn {
+        padding: 15px;
+        width: 67%;
+        background-color: white;
+        border-radius: 30px;
+        border: 2px solid black;
+        font-size: larger;
+        box-shadow: 0 0 10px 2px;
+        font-family: 'Epilogue', sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 60%;
+    }
+
+    .answer-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .answer-btn {
+        padding: 15px;
+        width: 59%;
+        background-color: white;
+        border-radius: 30px;
+        border: 2px solid black;
+        font-size: larger;
+        box-shadow: 0 0 10px 2px;
+        font-family: 'Epilogue', sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
