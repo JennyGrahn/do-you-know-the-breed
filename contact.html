@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Libre+Baskerville&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Do you know the breed?</title>
 </head>
 
@@ -26,21 +26,21 @@
         </nav>
         <!--Lines goes under and the sign in link is in a form of a button.-->
     </header>
-    <h2>Sign in</h2>
-    <p>or create an account <strong><a href="create-account.html">here</a></strong></p>
-    <!--When hovered over here there will be an underline appearing-->
-    <!--The form is for the user to sign in so they will be able to se their latest score, and maybe track it. I have not yet decided.-->
-    <form>
-        <p>
-            <input type="email" name="email" placeholder="Your Email">
-        </p>
-        <p>
-            <input type="password" name="password" placeholder="Your Password">
-        </p>
-        <p>
-            <input type="submit" name="submit" value="Sign in">
-        </p>
-    </form>
+
+    <h2 class="center-text">Contact</h2>
+    <p class="center-text">We would very much appreciate feedack on our quiz</p>
+    <div class="container">
+        <form>
+            <p>Your email</p>
+            <input type="email" name="email" placeholder="Your Email" id="email">
+
+            <p>You message</p>
+            <input type="text" name="text" placeholder="Write your message" id="message">
+            <br>
+            <button type="submit" class="send-btn">Send💌</button>
+
+        </form>
+    </div>
     <footer>Do you knwo the breed? 2024</footer>
 </body>
 

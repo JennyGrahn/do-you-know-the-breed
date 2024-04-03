@@ -47,6 +47,8 @@ function buildQuiz() {
     nextButton.addEventListener("click", nextBtnHandler);
 }
 
+//From https://www.cssscript.com/circle-progress-bar/
+
 var progressCircle = new ProgressCircle("#progress-circle-container", true);
 
 function updateProgressCircle(cirrectAnswers, totalQuestions) {
@@ -109,38 +111,3 @@ const showAnswer = function () {
         userAnswerSelector.parentElement.parentElement.classList.add("wrongAnswer");
     }
 };
-
-//From https://www.cssscript.com/circle-progress-bar/
-
-var instance = new ProgressCircle("#example", true);
-
-var pData = {
-    text: "64%",
-    percent: 64,
-    lines: [{
-        text: "Line 1"
-    }, {
-        text: "Line 2"
-    }, {
-        text: "Line 3"
-    }],
-    color: "green",
-    textColor: "grey"
-};
-
-instance.load(pData);
-
-instance.change({
-    text: "90%",
-    percent: 90,
-    lines: [{
-        text: "Line 4"
-    }, {
-        text: "Line 5"
-    }, {
-        text: "Line 6"
-    }],
-    color: "green",
-    textColor: "grey",
-    index: 5,
-})
