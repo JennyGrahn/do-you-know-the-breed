@@ -8,7 +8,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Labrador Retriever",
         image: {
-            src: "breed-images/img0.jpg",
+            src: "assets/breed-images/img0.jpg",
             alt: "A black retriever dog",
         },
     },
@@ -23,7 +23,7 @@ let breedQuestions = [{
         },
         correctAnswer: "German Shepherd",
         image: {
-            src: "breed-images/germanshepherd.jpg",
+            src: "assets/breed-images/germanshepherd.jpg",
             alt: "A brown and black coated sheepdog",
         },
     },
@@ -40,7 +40,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Golden Retriever",
         image: {
-            src: "breed-images/goldenretriever.jpg",
+            src: "assets/breed-images/goldenretriever.jpg",
             alt: "A large dog with a golden fur, popular among families because of it's friendly nature",
         },
 
@@ -56,7 +56,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Bulldog",
         image: {
-            src: "breed-images/english-bulldog.jpg",
+            src: "assets/breed-images/english-bulldog.jpg",
             alt: "A smaller stocky breed from England",
         },
 
@@ -72,7 +72,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Beagle",
         image: {
-            src: "breed-images/beagle.jpg",
+            src: "assets/breed-images/beagle.jpg",
             alt: "A hunting dog from Britain, the name is similar to a kind of american bread",
         },
     },
@@ -87,7 +87,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Poodle",
         image: {
-            src: "breed-images/poodle.jpg",
+            src: "assets/breed-images/poodle.jpg",
             alt: "A small dog, often beautifully cut and the epitomy of a show dog ",
         },
     },
@@ -102,7 +102,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Rottweiler",
         image: {
-            src: "breed-images/rottweiler.jpg",
+            src: "assets/breed-images/rottweiler.jpg",
             alt: "A big black and tan dog often used for guarding",
         }
     },
@@ -117,7 +117,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Norfolk Terrier",
         image: {
-            src: "breed-images/norfolkterrier.jpg",
+            src: "assets/breed-images/norfolkterrier.jpg",
             alt: "A small brown terrier",
         }
 
@@ -133,7 +133,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Boxer",
         image: {
-            src: "breed-images/boxer.jpg",
+            src: "assets/breed-images/boxer.jpg",
             alt: "A medium to large-sized breed known for its muscular build, energetic and loyal nature, intelligence",
         }
     },
@@ -148,7 +148,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Dachshund",
         image: {
-            src: "breed-images/dachshund.jpg",
+            src: "assets/breed-images/dachshund.jpg",
             alt: "A small to medium-sized breed known for its elongated body, short legs, playful demeanor, and propensity for digging",
         }
     },
@@ -162,7 +162,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Shih Tzu",
         image: {
-            src: "breed-images/shihtzu.jpg",
+            src: "assets/breed-images/shihtzu.jpg",
             alt: "The Shih Tzu is a small, long-haired toy dog breed known for its distinctive lion-like appearance.",
         }
     },
@@ -177,7 +177,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Siberian Huskey",
         image: {
-            src: "breed-images/siberian.jpg",
+            src: "assets/breed-images/siberian.jpg",
             alt: "A medium-sized breed recognized for its thick double coat, striking appearance with distinctive facial markings, high energy levels, strong endurance, and friendly disposition.",
         }
     },
@@ -192,7 +192,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Border Collie",
         image: {
-            src: "breed-images/bordercollie.jpg",
+            src: "assets/breed-images/bordercollie.jpg",
             alt: "A highly intelligent herding breed known for its exceptional work ethic, remarkable agility, intense focus, and strong desire to please its handler.",
         }
     },
@@ -207,7 +207,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Australian Shepherd",
         image: {
-            src: "breed-images/aussie.jpg",
+            src: "assets/breed-images/aussie.jpg",
             alt: "Originating from Australia, this breed is celebrated for its adaptability and intelligence making it a valuable asset in various tasks and activities requiring agility and sharp instincts.",
         }
     },
@@ -222,7 +222,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Japanese Shiba Inu",
         image: {
-            src: "breed-images/shiba.jpg",
+            src: "assets/breed-images/shiba.jpg",
             alt: "From Japan, this breed is characterized by its small to medium size, fox-like appearance, spirited demeanor, and distinctive curled tail.",
         }
     },
@@ -237,7 +237,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Cocker Spaniel",
         image: {
-            src: "breed-images/cockerspaniel.jpg",
+            src: "assets/breed-images/cockerspaniel.jpg",
             alt: "Originating from England, this breed is characterized by its silky coat, long ears, and cheerful disposition.",
         }
     },
@@ -251,7 +251,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Saint Bernard",
         image: {
-            src: "breed-images/saintb.jpg",
+            src: "assets/breed-images/saintb.jpg",
             alt: "From the Swiss Alps, this large and gentle breed is renowned for its imposing size, thick fur, and legendary reputation as a rescue dog.",
         }
 
@@ -267,7 +267,7 @@ let breedQuestions = [{
         },
         correctAnswer: "French Bulldog",
         image: {
-            src: "breed-images/frenchbulldog.jpg",
+            src: "assets/breed-images/frenchbulldog.jpg",
             alt: "Originating in France, this small, muscular breed is known for its distinctive bat-like ears and affectionate personality, making it a popular choice for urban living.",
         }
     },
@@ -282,7 +282,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Pomeranian",
         image: {
-            src: "breed-images/pomeranian.jpg",
+            src: "assets/breed-images/pomeranian.jpg",
             alt: "This small breed, originating from Germany and is characterized by its fluffy double coat",
         }
     },
@@ -297,7 +297,7 @@ let breedQuestions = [{
         },
         correctAnswer: "Borzoi",
         image: {
-            src: "breed-images/borzoi.jpg",
+            src: "assets/breed-images/borzoi.jpg",
             alt: "This breed from Russia is distinguished by its tall and slender build, long silky coat, graceful movements and was historically used in hunting",
         }
     },

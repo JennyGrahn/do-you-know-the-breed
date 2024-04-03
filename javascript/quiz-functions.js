@@ -81,7 +81,7 @@ const nextBtnHandler = function () {
     } else {
         quizContainer.innerHTML = "";
         let result = document.getElementById("result");
-        result.innerHTML = ` you have ${numCorrect} out of 20 correct answers`;
+        result.innerHTML = ` You have ${numCorrect} out of 20 correct answers`;
         progressCircleContainer.style.display = "block";
     }
     updateProgressCircle(20);
