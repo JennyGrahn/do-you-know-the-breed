@@ -124,9 +124,19 @@ input[type="radio"] {
 }
 
 #next-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 30px;
+    border-color: black;
+    border-width: 2px;
+    font-size: larger;
+    box-shadow: 0 0 10px 2px;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    display: block;
+    /*width: fit-content;*/
+
 }
 
 footer {
