@@ -87,6 +87,7 @@ a {
 }
 
 form {
+    font-family: 'Epilogue', sans-serif;
     width: 100%;
     max-width: 600px;
     text-align: center;
@@ -94,15 +95,23 @@ form {
     box-sizing: border-box;
 }
 
+#message,
 #email {
     width: 100%;
+    font-family: 'Epilogue', sans-serif;
+    text-align: left;
+}
 
+input[type="email"],
+input[type="text"] {
+    text-align: left;
 }
 
 #message {
-    width: 100%;
     height: 150px;
 }
+
+
 
 /*Styling for the send button*/
 
