@@ -137,7 +137,20 @@ input[type="radio"] {
     display: block;
 }
 
-footer {
+/*#progress-circle-container {
+    width: px;
+    /* Adjust width as needed */
+/*height: 100px;
+    /* Adjust height as needed */
+/* Add other styles for the progress circle container */
+/*display: flex;
+    justify-content: center;
+    /* Align horizontally */
+/* align-items: center;
+    /* Align vertically */
+}
+
+*/ footer {
     font-family: 'Epilogue', sans-serif;
     font-size: medium;
     text-align: center;

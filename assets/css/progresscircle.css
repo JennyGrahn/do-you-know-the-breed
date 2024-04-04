@@ -1,3 +1,4 @@
+/*Imported libary https://www.cssscript.com/circle-progress-bar/*/
 .pc-app {
     display: inline-block;
     font-size: 10px;
@@ -19,12 +20,14 @@
 }
 
 .pc-container {
-    margin: 0.3em;
+    margin-top: 15em;
+    margin-bottom: 15em;
+    margin-left: 26em;
     padding: 0.9em 0.2em 0.9em 0.2em;
-    width: 18em;
+    width: 40em;
+    height: 40em;
     border-radius: 0.5em;
-    border: 1px solid var(--border);
-    display: inline-grid;
+    border: 2px solid black/ display: inline-grid;
     cursor: pointer;
 }
 
@@ -44,6 +47,7 @@
     border-top: 1px solid var(--border);
 }
 
+/*For the background circle*/
 .progress-circle {
     font-size: 3em;
     width: 5em;
