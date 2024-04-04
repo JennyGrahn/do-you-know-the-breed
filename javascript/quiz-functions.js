@@ -1,18 +1,21 @@
 //The followig orignal code structur is partly copied from https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp and https://webdesign.tutsplus.com/multiple-choice-quiz-app-with-javascript--cms-107756t
-const quizContainer = document.getElementById("quiz");
-const resultsContainer = document.getElementById("results");
+const quizContainer = document.getElementById("quiz"); //Container for the quiz
+const resultsContainer = document.getElementById("results"); //Container for the results text
 const progressCircleContainer = document.querySelector(
     "#progress-circle-container"
-);
+); //Hides the progress circle during the quiz
 progressCircleContainer.style.display = "none";
 
+//Variables for tracking squiz progress and score 
 let questionNumber = 0;
 let currentQuestion;
 let numCorrect = 0;
 let userAnswerSelector;
 
+//Randomize the the order of questions in 'breedQuestions' array
 breedQuestions.sort(() => Math.random() - 0.5);
 
+//Function that shuffles the question randomly
 const randomAnswers = () => {
     let answers = [];
     for (let property in currentQuestion.answers) {
@@ -27,6 +30,7 @@ const randomAnswers = () => {
     }
 };
 
+//The buildQuiz function is responsible for creating the quiz
 function buildQuiz() {
     currentQuestion = breedQuestions[questionNumber];
     const output = [];
@@ -57,6 +61,7 @@ let instance = new ProgressCircle("#progress-circle-container", true, [{
     textColor: "grey",
 }, ]);
 
+//Updates the progress circle when the number of correct answer increases
 function updateProgressCircle(totalQuestions) {
     var percent = (numCorrect / totalQuestions) * 100;
 
@@ -70,7 +75,7 @@ function updateProgressCircle(totalQuestions) {
     instance.update(pData);
 }
 
-//Next button to generate the next question
+//Event handler function for the "Next" button click event
 const nextBtnHandler = function () {
     questionNumber++;
     if (questionNumber <= breedQuestions.length) {
@@ -87,6 +92,7 @@ const nextBtnHandler = function () {
     updateProgressCircle(20);
 };
 
+//Displays the user's selected answer and disable the user to select another answer
 const showAnswer = function () {
     document.getElementById("next-btn").disabled = false;
     document

@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <!--Header-->
     <header class="line">
         <h1 id="header-text">Do you know the breed?</h1>
         <nav>
@@ -26,16 +27,20 @@
             <a class="menu" href="instructions.html">quiz</a>
             <a class="contact" href="contact.html">contact📩</a>
         </nav>
-        <!--Lines goes here-->
     </header>
+    <!--Div that holds progress circle-->
     <div id="progress-circle-container"></div>
+    <!--Div that holds the result text-->
     <div id="result"></div>
+    <!--Div that holds the quiz question, image, answer buttons and next nutton-->
     <div id="quiz"></div>
-
+    <!--Footer-->
     <footer>Do you know the breed? 2024</footer>
+    <!--Script tag for the question array-->
     <script src="javascript/breeds.js"></script>
+    <!--Script tag for the quiz-->
     <script src="javascript/quiz-functions.js"></script>
-
+    <!--Script that calls the buildQuiz function and create quiz interface-->
     <script>
         buildQuiz();
     </script>

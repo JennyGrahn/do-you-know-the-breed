@@ -1,5 +1,7 @@
+//Question array with question, answer to select and corresponding image
+
+//Correct answer is Labrador retriever 
 let breedQuestions = [{
-        //Correct answer is Labrador retriever 
         question: "Do you know the breed?",
         answers: {
             a: "Bulldog",
@@ -9,7 +11,7 @@ let breedQuestions = [{
         correctAnswer: "Labrador Retriever",
         image: {
             src: "assets/breed-images/img0.jpg",
-            alt: "A black retriever dog",
+            alt: "Originating from Newfoundland, used by hunters to retrieve but is today a popular allround dog",
         },
     },
 
@@ -24,12 +26,10 @@ let breedQuestions = [{
         correctAnswer: "German Shepherd",
         image: {
             src: "assets/breed-images/germanshepherd.jpg",
-            alt: "A brown and black coated sheepdog",
+            alt: "A brown and black coated sheepdog often used by the military and the police",
         },
     },
-    /* correctAnswer: "c",
-        image: "breed-images/germanshepherd.jpg",
-    },*/
+
     //Correct answer is Golden Retriever
     {
         question: "Do you know the breed?",

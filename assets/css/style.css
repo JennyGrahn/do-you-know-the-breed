@@ -58,6 +58,8 @@ a {
     font-family: 'Epilogue', sans-serif;
 }
 
+/*Postion text and button*/
+
 .container {
     display: flex;
     align-items: center;
@@ -85,6 +87,8 @@ a {
     color: white;
     border-radius: 30px;
 }
+
+/*Styling for the footer*/
 
 footer {
     font-family: 'Epilogue', sans-serif;
