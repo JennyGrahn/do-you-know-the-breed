@@ -102,7 +102,6 @@ img {
     margin: 50px;
     padding: 25px;
     border-radius: 30px;
-    /*background-color: white;*/
     border-color: black;
     border-width: 2px;
     font-size: larger;
@@ -134,6 +133,14 @@ input[type="radio"] {
     font-family: 'Epilogue', sans-serif;
     text-align: center;
     display: block;
+}
+
+.quizAgain {
+    background-color: green;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 footer {
