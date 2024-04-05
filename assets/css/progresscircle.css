@@ -27,7 +27,8 @@
     width: 40em;
     height: 40em;
     border-radius: 0.5em;
-    border: 2px solid black/ display: inline-grid;
+    border: 2px solid black;
+    display: inline-grid;
     cursor: pointer;
 }
 

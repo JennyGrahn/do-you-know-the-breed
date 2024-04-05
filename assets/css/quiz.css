@@ -101,8 +101,8 @@ img {
 .answer-btn {
     margin: 50px;
     padding: 25px;
-    background-color: white;
     border-radius: 30px;
+    background-color: white;
     border-color: black;
     border-width: 2px;
     font-size: larger;
@@ -126,7 +126,7 @@ input[type="radio"] {
 #next-btn {
     margin: 50px auto;
     padding: 25px;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 30px;
     border-color: black;
     border-width: 2px;
@@ -137,20 +137,7 @@ input[type="radio"] {
     display: block;
 }
 
-/*#progress-circle-container {
-    width: px;
-    /* Adjust width as needed */
-/*height: 100px;
-    /* Adjust height as needed */
-/* Add other styles for the progress circle container */
-/*display: flex;
-    justify-content: center;
-    /* Align horizontally */
-/* align-items: center;
-    /* Align vertically */
-}
-
-*/ footer {
+footer {
     font-family: 'Epilogue', sans-serif;
     font-size: medium;
     text-align: center;
@@ -184,7 +171,7 @@ input[type="radio"] {
     .answer-btn {
         padding: 15px;
         width: 65%;
-        background-color: white;
+        /*background-color: white;*/
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -217,7 +204,7 @@ input[type="radio"] {
     .answer-btn {
         padding: 15px;
         width: 67%;
-        background-color: white;
+        /* background-color: white;*/
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -249,7 +236,7 @@ input[type="radio"] {
     .answer-btn {
         padding: 15px;
         width: 67%;
-        background-color: white;
+        /*background-color: white;*/
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -282,7 +269,7 @@ input[type="radio"] {
     .answer-btn {
         padding: 15px;
         width: 67%;
-        background-color: white;
+        /*background-color: white;*/
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -315,7 +302,7 @@ input[type="radio"] {
     .answer-btn {
         padding: 15px;
         width: 59%;
-        background-color: white;
+        /* background-color: white;*/
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
