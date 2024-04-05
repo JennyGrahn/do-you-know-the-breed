@@ -136,12 +136,22 @@ input[type="radio"] {
     display: block;
 }
 
-.quiz-again {
+.quizAgain {
     background-color: green;
     width: 50px;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
+    display: inline-block;
+    width: 166px;
+}
+
+#result {
+    margin: 10px;
+}
+
+#result>p {
+    margin: 10px 0px;
 }
 
 footer {

@@ -91,7 +91,7 @@ const nextBtnHandler = function () {
         quizContainer.innerHTML = "";
         let result = document.getElementById("result");
         result.innerHTML = `<p> You have ${numCorrect} out of 20 correct answers </p>`;
-        result.innerHTML += `<p><a class="quiz-again" href="quiz.html">Take the quiz again!</a></p>`;
+        result.innerHTML += `<p><a class="quizAgain" href="quiz.html">Take the quiz again!</a></p>`;
         progressCircleContainer.style.visibility = "visible";
     }
     updateProgressCircle(20);
@@ -108,23 +108,21 @@ const showAnswer = function () {
         });
 
     const selector = `input[name=question${questionNumber}]:checked`;
+    // mark the checked item with id so we can use it for diabling all other radio buttons
+    selector.id = "selected";
     userAnswerSelector = document.querySelector(selector) || {};
 
     if (userAnswerSelector.value === currentQuestion.correctAnswer) {
         userAnswerSelector.parentElement.parentElement.classList.add(
             "correctAnswer"
         );
-
-        //Disables all the radio buttons
-        document.querySelectorAll("input[type=radio]").forEach((item) => {
-            if (
-                item.parentElement.parentElement.classList.contains("correctAnswer") ==
-                false
-            )
-                item.disabled = true;
-            item.parentElement.parentElement.style.borderStyle = "none";
-        });
     } else {
         userAnswerSelector.parentElement.parentElement.classList.add("wrongAnswer");
     }
+
+    //Disables all other radio buttons
+    document.querySelectorAll("input[type=radio]").forEach((item) => {
+        if (item.id != "selected") item.disabled = true;
+        item.parentElement.parentElement.style.borderStyle = "none";
+    });
 };
