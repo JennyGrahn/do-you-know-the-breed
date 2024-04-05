@@ -72,13 +72,14 @@ a {
 
 .center-text {
     text-align: center;
+    margin-top: 50px;
 }
 
 .form-container {
     width: 40%;
     height: auto;
     display: flex;
-    margin: 200px auto;
+    margin: 40px auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
