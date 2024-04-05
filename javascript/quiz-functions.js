@@ -91,7 +91,7 @@ const nextBtnHandler = function () {
         quizContainer.innerHTML = "";
         let result = document.getElementById("result");
         result.innerHTML = `<p> You have ${numCorrect} out of 20 correct answers </p>`;
-        result.innerHTML += `<p><a class="quizAgain" href="quiz.html">Take the quiz again!</a></p>`;
+        result.innerHTML += `<p><a class="quiz-again" href="quiz.html">Take the quiz again!</a></p>`;
         progressCircleContainer.style.visibility = "visible";
     }
     updateProgressCircle(20);

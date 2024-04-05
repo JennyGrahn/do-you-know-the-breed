@@ -1,10 +1,11 @@
 /*CSS styling for the header, navigation bar and logo*/
 * {
     margin: 0;
-    padding: auto;
+
 }
 
 body {
+    padding: 0;
     background-color: #f5f5f5;
 }
 
@@ -135,7 +136,7 @@ input[type="radio"] {
     display: block;
 }
 
-.quizAgain {
+.quiz-again {
     background-color: green;
     width: 50px;
     padding: 10px;
