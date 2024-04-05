@@ -68,7 +68,7 @@ a {
     font-family: 'Epilogue', sans-serif;
 }
 
-/*Styling forn the form*/
+/*Styling for the form*/
 
 .center-text {
     text-align: center;
@@ -110,8 +110,6 @@ input[type="text"] {
 #message {
     height: 150px;
 }
-
-
 
 /*Styling for the send button*/
 
