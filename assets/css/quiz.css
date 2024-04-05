@@ -279,7 +279,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
-        width: 50%;
+        width: 45%;
     }
 
     .answer-grid {
@@ -291,7 +291,7 @@ footer {
 
     .answer-btn {
         padding: 15px;
-        width: 45%;
+        width: 44%;
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;

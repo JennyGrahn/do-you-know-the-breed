@@ -4,9 +4,9 @@ const resultsContainer = document.getElementById("results"); //Container for the
 const progressCircleContainer = document.querySelector(
     "#progress-circle-container"
 ); //Hides the progress circle during the quiz
-progressCircleContainer.style.display = "none";
+progressCircleContainer.style.visibility = "hidden";
 
-//Variables for tracking squiz progress and score 
+//Variables for tracking squiz progress and score
 let questionNumber = 0;
 let currentQuestion;
 let numCorrect = 0;
@@ -59,7 +59,10 @@ let instance = new ProgressCircle("#progress-circle-container", true, [{
     percent: 0,
     color: "green",
     textColor: "grey",
+    height: "700px",
 }, ]);
+
+document.querySelector("div.pc-container").style.height = "157px";
 
 //Updates the progress circle when the number of correct answer increases
 function updateProgressCircle(totalQuestions) {
@@ -69,10 +72,11 @@ function updateProgressCircle(totalQuestions) {
         text: percent.toFixed(0) + "%",
         percent: percent,
         color: "green",
-        textColor: "grey",
+        textColor: "black",
     };
 
     instance.update(pData);
+    document.querySelector("div.pc-container").style.height = "157px";
 }
 
 //Event handler function for the "Next" button click event
@@ -86,8 +90,9 @@ const nextBtnHandler = function () {
     } else {
         quizContainer.innerHTML = "";
         let result = document.getElementById("result");
-        result.innerHTML = ` You have ${numCorrect} out of 20 correct answers`;
-        progressCircleContainer.style.display = "block";
+        result.innerHTML = `<p> You have ${numCorrect} out of 20 correct answers </p>`;
+        result.innerHTML += `<p><a class="quizAgain" href="quiz.html">Take the quiz again!</a></p>`;
+        progressCircleContainer.style.visibility = "visible";
     }
     updateProgressCircle(20);
 };
@@ -110,12 +115,14 @@ const showAnswer = function () {
             "correctAnswer"
         );
 
+        //Disables all the radio buttons
         document.querySelectorAll("input[type=radio]").forEach((item) => {
             if (
                 item.parentElement.parentElement.classList.contains("correctAnswer") ==
                 false
             )
                 item.disabled = true;
+            item.parentElement.parentElement.style.borderStyle = "none";
         });
     } else {
         userAnswerSelector.parentElement.parentElement.classList.add("wrongAnswer");
