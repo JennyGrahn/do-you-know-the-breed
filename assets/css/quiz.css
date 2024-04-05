@@ -87,7 +87,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
-    width: 70%;
+    width: 50%;
 }
 
 .answer-grid {
@@ -102,7 +102,7 @@ img {
     margin: 50px;
     padding: 25px;
     border-radius: 30px;
-    background-color: white;
+    /*background-color: white;*/
     border-color: black;
     border-width: 2px;
     font-size: larger;
@@ -126,7 +126,6 @@ input[type="radio"] {
 #next-btn {
     margin: 50px auto;
     padding: 25px;
-    /*background-color: white;*/
     border-radius: 30px;
     border-color: black;
     border-width: 2px;
@@ -157,7 +156,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
-        width: 70%;
+        width: 60%;
     }
 
     .answer-grid {
@@ -165,13 +164,11 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: 70%;
     }
 
     .answer-btn {
         padding: 15px;
-        width: 65%;
-        /*background-color: white;*/
+        width: 55%;
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -190,7 +187,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
-        width: 70%;
+        width: 60%;
     }
 
     .answer-grid {
@@ -198,13 +195,11 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: 70%;
     }
 
     .answer-btn {
         padding: 15px;
-        width: 67%;
-        /* background-color: white;*/
+        width: 55%;
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -222,7 +217,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
-        width: 70%;
+        width: 60%;
     }
 
     .answer-grid {
@@ -230,13 +225,11 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: 70%;
     }
 
     .answer-btn {
         padding: 15px;
-        width: 67%;
-        /*background-color: white;*/
+        width: 55%;
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -255,7 +248,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
-        width: 70%;
+        width: 60%;
     }
 
     .answer-grid {
@@ -263,13 +256,11 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: 70%;
     }
 
     .answer-btn {
         padding: 15px;
-        width: 67%;
-        /*background-color: white;*/
+        width: 55%;
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
@@ -288,7 +279,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
-        width: 60%;
+        width: 50%;
     }
 
     .answer-grid {
@@ -296,13 +287,11 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: 60%;
     }
 
     .answer-btn {
         padding: 15px;
-        width: 59%;
-        /* background-color: white;*/
+        width: 45%;
         border-radius: 30px;
         border: 2px solid black;
         font-size: larger;
